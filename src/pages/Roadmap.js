@@ -190,10 +190,10 @@ export default class Roadmap extends React.Component {
                       <a href="https://pancakeswap.finance/swap?outputCurrency=0x487ecd4cFa635D1a9409E86Cd22d33d5abEb7b44">
                         Buy VGD
                       </a>
-                      <Link to="/terms">Terms</Link>
+                      {/* <Link to="/terms">Terms</Link>
                       <Link to="/cookie-policy">Cookie Policy</Link>
                       <Link to="/landing-page">Landing Page</Link>
-                      <Link to="/privacy-policy">Privacy Policy</Link>
+                      <Link to="/privacy-policy">Privacy Policy</Link> */}
                     </div>
                   ) : (
                     ""
@@ -579,10 +579,10 @@ export default class Roadmap extends React.Component {
                     <a href="https://pancakeswap.finance/swap?outputCurrency=0x487ecd4cFa635D1a9409E86Cd22d33d5abEb7b44">
                       Buy VGD
                     </a>
-                    <Link to="/terms">Terms</Link>
+                    {/* <Link to="/terms">Terms</Link>
                     <Link to="/cookie-policy">Cookie Policy</Link>
                     <Link to="/landing-page">Landing Page</Link>
-                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link> */}
                   </div>
                 ) : (
                   ""
