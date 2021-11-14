@@ -230,6 +230,7 @@ export default class Roadmap extends React.Component {
               <div className="row1-wrap">
                 <div className="row1">
                   <img
+                  alt="asdf"
                     className="loc-icon"
                     onClick={this.menu1}
                     src={locationIcon}
@@ -269,6 +270,7 @@ export default class Roadmap extends React.Component {
                 {this.state.toggle ? (
                   <div className="left-icon-wrap">
                     <img
+                    alt="asdf"
                       src={locationIcon}
                       onClick={this.menu7}
                       className="loc-icon"
@@ -301,6 +303,7 @@ export default class Roadmap extends React.Component {
                 )}
 
                 <img
+                alt="asdf"
                   src={locationIcon}
                   onClick={this.menu2}
                   className="loc-icon"
@@ -329,6 +332,7 @@ export default class Roadmap extends React.Component {
               </div>
               <div className="img-icon3-wrap">
                 <img
+                alt="asdf"
                   src={locationIcon}
                   onClick={this.menu3}
                   className="loc-icon"
@@ -354,6 +358,7 @@ export default class Roadmap extends React.Component {
               </div>
               <div className="img-icon4-wrap">
                 <img
+                alt="asdf"
                   className="img1 loc-icon"
                   onClick={this.menu4}
                   src={locationIcon}
@@ -377,6 +382,7 @@ export default class Roadmap extends React.Component {
               </div>
               <div className="img-icon5-wrap">
                 <img
+                alt="asdf"
                   className="loc-icon"
                   onClick={this.menu5}
                   src={locationIcon}
@@ -404,6 +410,7 @@ export default class Roadmap extends React.Component {
               </div>
               <div className="last-img">
                 <img
+                alt="asdf"
                   className="loc-icon"
                   onClick={this.menu6}
                   src={locationIcon}
@@ -615,6 +622,7 @@ export default class Roadmap extends React.Component {
                       <div className="row1-wrap">
                         <div className="row1">
                           <img
+                            alt="asdf"
                             className="loc-icon"
                             onClick={this.menu1}
                             src={locationIconMob}
@@ -653,6 +661,7 @@ export default class Roadmap extends React.Component {
                         {this.state.toggle ? (
                           <div className="left-icon-wrap">
                             <img
+                            alt="asdf"
                               src={locationIconMob}
                               onClick={this.menu7}
                               className="loc-icon"
@@ -688,6 +697,7 @@ export default class Roadmap extends React.Component {
                       </div>
                       <div className="img-icon2-wrap">
                         <img
+                        alt="asdf"
                           src={locationIconMob}
                           onClick={this.menu2}
                           className="loc-icon"
@@ -717,6 +727,7 @@ export default class Roadmap extends React.Component {
                       </div>
                       <div className="img-icon3-wrap">
                         <img
+                        alt="asdf"
                           src={locationIconMob}
                           onClick={this.menu3}
                           className="loc-icon icon"
@@ -743,6 +754,7 @@ export default class Roadmap extends React.Component {
                       </div>
                       <div className="img-icon4-wrap">
                         <img
+                        alt="asdf"
                           className="img1 loc-icon"
                           onClick={this.menu4}
                           src={locationIconMob}
@@ -767,6 +779,7 @@ export default class Roadmap extends React.Component {
                       </div>
                       <div className="img-icon5-wrap">
                         <img
+                        alt="asdf"
                           className="loc-icon"
                           onClick={this.menu5}
                           src={locationIconMob}
@@ -796,6 +809,7 @@ export default class Roadmap extends React.Component {
                       </div>
                       <div className="last-img">
                         <img
+                        alt="asdf"
                           className="loc-icon"
                           onClick={this.menu6}
                           src={locationIconMob}

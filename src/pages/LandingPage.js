@@ -318,10 +318,10 @@ export default class LandingPage extends React.Component {
         <div className="landing-mobile">
           <div className="header">
             <div className="container">
-              <a href="#" className="l-div">
+              <Link to="/" className="l-div">
                 <img alt="asdfd" src={headerLogo} />
                 <span>Vangold</span>
-              </a>
+              </Link>
               <div className="r-div">
                 <a href="https://t.me/vangoldtoken1" className="join-btn">Join the Network</a>
                 <img alt="asdfd" onClick={this.handleMenu} src={menuIcon} />
