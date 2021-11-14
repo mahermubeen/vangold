@@ -132,7 +132,7 @@ export default class Roadmap extends React.Component {
           <div className="header">
             <div className="container">
               <Link to="/" className="l-div">
-                <img src={headerLogo} alt="asdf" />
+                <img alt="asdfd" src={headerLogo} alt="asdf" />
                 <span>Vangold</span>
               </Link>
 
@@ -212,7 +212,7 @@ export default class Roadmap extends React.Component {
 
           <div className="main-content">
             <div className="sec1">
-              <img className="bg-img" src={roadmapBG} />
+              <img alt="asdfd" className="bg-img" src={roadmapBG} />
 
               <div className="toggle-wrap">
                 <div className="toggle-btn">
@@ -223,7 +223,7 @@ export default class Roadmap extends React.Component {
                 </div>
 
                 <div className="click-wrap">
-                  <img src={clickBG} />
+                  <img alt="asdfd" src={clickBG} />
                   <span>Click</span>
                 </div>
               </div>
@@ -239,7 +239,7 @@ export default class Roadmap extends React.Component {
                 </div>
 
                 <div className="click-wrap">
-                  <img src={clickBG} />
+                  <img alt="asdfd" src={clickBG} />
                   <span>Click</span>
                 </div>
 
@@ -264,7 +264,7 @@ export default class Roadmap extends React.Component {
               </div>
 
               <div className="row2">
-                <img className="line1" src={line1} />
+                <img alt="asdfd" className="line1" src={line1} />
               </div>
               <div className="img-icon2-wrap">
                 {this.state.toggle ? (
@@ -306,7 +306,7 @@ export default class Roadmap extends React.Component {
                   onClick={this.menu2}
                   className="loc-icon"
                 />
-                <img className="line2" src={line2} />
+                <img alt="asdfd" className="line2" src={line2} />
 
                 {this.state.menu2 ? (
                   <div className="menu2-wrap">
@@ -334,7 +334,7 @@ export default class Roadmap extends React.Component {
                   onClick={this.menu3}
                   className="loc-icon"
                 />
-                <img className="line3" src={line3} />
+                <img alt="asdfd" className="line3" src={line3} />
 
                 {this.state.menu3 ? (
                   <div className="menu3-wrap">
@@ -359,7 +359,7 @@ export default class Roadmap extends React.Component {
                   onClick={this.menu4}
                   src={locationIcon}
                 />
-                <img className="line4" src={line4} />
+                <img alt="asdfd" className="line4" src={line4} />
 
                 {this.state.menu4 ? (
                   <div className="menu4-wrap">
@@ -382,7 +382,7 @@ export default class Roadmap extends React.Component {
                   onClick={this.menu5}
                   src={locationIcon}
                 />
-                <img className="line5" src={line5} />
+                <img alt="asdfd" className="line5" src={line5} />
 
                 {this.state.menu5 ? (
                   <div className="menu5-wrap">
@@ -435,7 +435,7 @@ export default class Roadmap extends React.Component {
             <div className="container">
               <div className="col1">
                 <Link to="/" className="brand-wrap">
-                  <img className="brand-img" src={logo} />
+                  <img alt="asdfd" className="brand-img" src={logo} />
                   <span>Vangold</span>
                 </Link>
                 <p className="p1">Copyright © 2021 Vangold Finance.</p>
@@ -445,22 +445,22 @@ export default class Roadmap extends React.Component {
                     href="https://instagram.com/vangoldfinance?r=nametag"
                     className="circle"
                   >
-                    <img src={insta} />
+                    <img alt="asdfd" src={insta} />
                   </a>
                   <a href="https://vangold.finance/" className="circle">
-                    <img src={basket} />
+                    <img alt="asdfd" src={basket} />
                   </a>
                   <a
                     href="https://twitter.com/vangoldfinance"
                     className="circle"
                   >
-                    <img src={twitter} />
+                    <img alt="asdfd" src={twitter} />
                   </a>
                   <a
                     href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
                     className="circle"
                   >
-                    <img src={youtube} />
+                    <img alt="asdfd" src={youtube} />
                   </a>
                 </div>
               </div>
@@ -487,7 +487,7 @@ export default class Roadmap extends React.Component {
                     type="text"
                     placeholder="Your email address"
                   />
-                  <img src={send} />
+                  <img alt="asdfd" src={send} />
                 </label>
               </div>
             </div>
@@ -498,14 +498,14 @@ export default class Roadmap extends React.Component {
           <div className="header">
             <div className="container">
               <Link to="/" className="l-div">
-                <img src={headerLogo} alt="asdf" />
+                <img alt="asdfd" src={headerLogo} alt="asdf" />
                 <span>Vangold</span>
               </Link>
               <div className="r-div">
                 <a href="https://t.me/vangoldtoken1" className="join-btn">
                   Join the Network
                 </a>
-                <img onClick={this.handleMenu} src={menuIcon} />
+                <img alt="asdfd" onClick={this.handleMenu} src={menuIcon} />
               </div>
             </div>
           </div>
@@ -520,9 +520,9 @@ export default class Roadmap extends React.Component {
                   {" "}
                   <p>Community</p>
                   {this.state.subMenu1 === true ? (
-                    <img src={up} />
+                    <img alt="asdfd" src={up} />
                   ) : (
-                    <img src={down} />
+                    <img alt="asdfd" src={down} />
                   )}
                 </div>
                 {this.state.subMenu1 === true ? (
@@ -544,9 +544,9 @@ export default class Roadmap extends React.Component {
                 <div onClick={() => this.subMenu2()} className="menu-head">
                   <p>Documentation</p>
                   {this.state.subMenu2 === true ? (
-                    <img src={up} />
+                    <img alt="asdfd" src={up} />
                   ) : (
-                    <img src={down} />
+                    <img alt="asdfd" src={down} />
                   )}
                 </div>
                 {this.state.subMenu2 === true ? (
@@ -562,9 +562,9 @@ export default class Roadmap extends React.Component {
                 <div onClick={() => this.subMenu3()} className="menu-head">
                   <p>Markets</p>
                   {this.state.subMenu3 === true ? (
-                    <img src={up} />
+                    <img alt="asdfd" src={up} />
                   ) : (
-                    <img src={down} />
+                    <img alt="asdfd" src={down} />
                   )}
                 </div>
                 {this.state.subMenu3 === true ? (
@@ -593,7 +593,7 @@ export default class Roadmap extends React.Component {
                 <div className="container">
                   <div className="main-content">
                     <div className="sec1">
-                      <img className="bg-img" src={roadmapBG} />
+                      <img alt="asdfd" className="bg-img" src={roadmapBG} />
 
                       <div className="toggle-wrap">
                         <div className="toggle-btn">
@@ -608,7 +608,7 @@ export default class Roadmap extends React.Component {
                         </div>
 
                         <div className="click-wrap">
-                          <img src={clickBG} />
+                          <img alt="asdfd" src={clickBG} />
                           <span>Click</span>
                         </div>
                       </div>
@@ -624,7 +624,7 @@ export default class Roadmap extends React.Component {
                         </div>
 
                         <div className="click-wrap">
-                          <img src={clickBG} />
+                          <img alt="asdfd" src={clickBG} />
                           <span>Click</span>
                         </div>
 
@@ -650,7 +650,7 @@ export default class Roadmap extends React.Component {
                       </div>
 
                       <div className="row2">
-                        <img className="line1" src={line1Mob} />
+                        <img alt="asdfd" className="line1" src={line1Mob} />
                         {this.state.toggle ? (
                           <div className="left-icon-wrap">
                             <img
@@ -693,7 +693,7 @@ export default class Roadmap extends React.Component {
                           onClick={this.menu2}
                           className="loc-icon"
                         />
-                        <img className="line2" src={line2Mob} />
+                        <img alt="asdfd" className="line2" src={line2Mob} />
 
                         {this.state.menu2 ? (
                           <div className="menu2-wrap">
@@ -722,7 +722,7 @@ export default class Roadmap extends React.Component {
                           onClick={this.menu3}
                           className="loc-icon icon"
                         />
-                        <img className="line3" src={line3Mob} />
+                        <img alt="asdfd" className="line3" src={line3Mob} />
 
                         {this.state.menu3 ? (
                           <div className="menu3-wrap">
@@ -748,7 +748,7 @@ export default class Roadmap extends React.Component {
                           onClick={this.menu4}
                           src={locationIconMob}
                         />
-                        <img className="line4" src={line4Mob} />
+                        <img alt="asdfd" className="line4" src={line4Mob} />
 
                         {this.state.menu4 ? (
                           <div className="menu4-wrap">
@@ -772,7 +772,7 @@ export default class Roadmap extends React.Component {
                           onClick={this.menu5}
                           src={locationIconMob}
                         />
-                        <img className="line5" src={line5Mob} />
+                        <img alt="asdfd" className="line5" src={line5Mob} />
 
                         {this.state.menu5 ? (
                           <div className="menu5-wrap">
@@ -831,7 +831,7 @@ export default class Roadmap extends React.Component {
                 <div className="container">
                   <div className="col1">
                     <Link to="/" className="brand-wrap">
-                      <img className="brand-img" src={logo} />
+                      <img alt="asdfd" className="brand-img" src={logo} />
                       <span>Vangold</span>
                     </Link>
 
@@ -842,7 +842,7 @@ export default class Roadmap extends React.Component {
                         type="text"
                         placeholder="Your email address"
                       />
-                      <img src={send} />
+                      <img alt="asdfd" src={send} />
                     </label>
 
                     <p className="p1">Copyright © 2021 Vangold Finance.</p>
@@ -852,22 +852,22 @@ export default class Roadmap extends React.Component {
                         href="https://instagram.com/vangoldfinance?r=nametag"
                         className="circle"
                       >
-                        <img src={insta} />
+                        <img alt="asdfd" src={insta} />
                       </a>
                       <a href="https://vangold.finance/" className="circle">
-                        <img src={basket} />
+                        <img alt="asdfd" src={basket} />
                       </a>
                       <a
                         href="https://twitter.com/vangoldfinance"
                         className="circle"
                       >
-                        <img src={twitter} />
+                        <img alt="asdfd" src={twitter} />
                       </a>
                       <a
                         href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
                         className="circle"
                       >
-                        <img src={youtube} />
+                        <img alt="asdfd" src={youtube} />
                       </a>
                     </div>
                   </div>

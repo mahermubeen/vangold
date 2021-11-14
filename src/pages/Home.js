@@ -102,7 +102,7 @@ export default class Home extends React.Component {
           <div className="header">
             <div className="container">
               <Link to="/" className="l-div">
-                <img src={headerLogo} alt="asdf" />
+                <img alt="asdfd" src={headerLogo} alt="asdf" />
                 <span>Vangold</span>
               </Link>
 
@@ -257,7 +257,7 @@ export default class Home extends React.Component {
                   </a>
                 </div>
                 <div className="r-sec">
-                  <img src={sec1Bg} />
+                  <img alt="asdfd" src={sec1Bg} />
                 </div>
               </div>
 
@@ -268,16 +268,16 @@ export default class Home extends React.Component {
                       <div className="up-d">
                         <div className="brand-wrap">
                           <figure>
-                            <img src={newImg1} />
+                            <img alt="asdfd" src={newImg1} />
                           </figure>
                           <span>Vangold</span>
                         </div>
-                        <img src={chart} />
+                        <img alt="asdfd" src={chart} />
                       </div>
                       <div className="down-d">
                         <span className="span1">$0.001402</span>
                         <div className="text-wrap">
-                          <img src={greenUp} />
+                          <img alt="asdfd" src={greenUp} />
                           <span>3.87%</span>
                         </div>
                       </div>
@@ -286,16 +286,16 @@ export default class Home extends React.Component {
                       <div className="up-d">
                         <div className="brand-wrap">
                           <figure>
-                            <img src={newImg} />
+                            <img alt="asdfd" src={newImg} />
                           </figure>
                           <span>Vangoldswap</span>
                         </div>
-                        <img src={chart} />
+                        <img alt="asdfd" src={chart} />
                       </div>
                       <div className="down-d">
                         <span className="span1">$0.001402</span>
                         <div className="text-wrap">
-                          <img src={greenUp} />
+                          <img alt="asdfd" src={greenUp} />
                           <span>3.87%</span>
                         </div>
                       </div>
@@ -305,7 +305,7 @@ export default class Home extends React.Component {
                     <h2>Trusted by our beloved partners</h2>
                     <div className="lower-d">
                       <div className="bin-wrap">
-                        <img src={binance} />
+                        <img alt="asdfd" src={binance} />
                         <span>Binance</span>
                       </div>
                     </div>
@@ -315,7 +315,7 @@ export default class Home extends React.Component {
 
               <div className="sec3">
                 <div className="left-fig">
-                  <img src={sec3Bg} />
+                  <img alt="asdfd" src={sec3Bg} />
                 </div>
 
                 <div className="r-div">
@@ -345,7 +345,7 @@ export default class Home extends React.Component {
                 </div>
 
                 <div className="left-fig">
-                  <img src={sec4Bg} />
+                  <img alt="asdfd" src={sec4Bg} />
                 </div>
               </div>
 
@@ -358,7 +358,7 @@ export default class Home extends React.Component {
                 <div className="boxes">
                   <div className="box">
                     <figure>
-                      <img src={icon1} />
+                      <img alt="asdfd" src={icon1} />
                     </figure>
                     <h4>Vangold Freelance</h4>
                     <p>
@@ -368,7 +368,7 @@ export default class Home extends React.Component {
                   </div>
                   <div className="box">
                     <figure>
-                      <img src={icon2} />
+                      <img alt="asdfd" src={icon2} />
                     </figure>
                     <h4>Vangold Pay</h4>
                     <p>
@@ -378,7 +378,7 @@ export default class Home extends React.Component {
                   </div>
                   <div className="box">
                     <figure>
-                      <img src={icon3} />
+                      <img alt="asdfd" src={icon3} />
                     </figure>
                     <h4>Vangold NFT</h4>
                     <p>
@@ -388,7 +388,7 @@ export default class Home extends React.Component {
                   </div>
                   <div className="box">
                     <figure>
-                      <img src={icon4} />
+                      <img alt="asdfd" src={icon4} />
                     </figure>
                     <h4>Vangold Mart</h4>
                     <p>
@@ -398,7 +398,7 @@ export default class Home extends React.Component {
                   </div>
                   <div className="box">
                     <figure>
-                      <img src={icon5} />
+                      <img alt="asdfd" src={icon5} />
                     </figure>
                     <h4>Vangold Metaverse</h4>
                     <p>
@@ -408,7 +408,7 @@ export default class Home extends React.Component {
                   </div>
                   <div className="box">
                     <figure>
-                      <img src={icon6} />
+                      <img alt="asdfd" src={icon6} />
                     </figure>
                     <h4>Vangold Web3.0</h4>
                     <p>
@@ -426,47 +426,47 @@ export default class Home extends React.Component {
                   <div class="carousel" data-flickity='{ "wrapAround": true }'>
                     <div class="carousel-cell">
                       <a href="https://vangoldfinance.medium.com/titans-ventures-is-excited-to-host-the-next-ama-with-vangold-finance-b48c8828c119">
-                        <img src={card1} />
+                        <img alt="asdfd" src={card1} />
                       </a>
                     </div>
                     <div class="carousel-cell">
                       <a href="https://vangoldfinance.medium.com/vangold-v2-official-airdrop-live-aec9f33f914d">
-                        <img src={card2} />
+                        <img alt="asdfd" src={card2} />
                       </a>
                     </div>
                     <div class="carousel-cell">
                       <a href="https://vangoldfinance.medium.com/dva-will-host-ama-vangold-in-room-d-va-community-26-september-2pm-utc-50-for-top-10-314783716e1a">
-                        <img src={card3} />
+                        <img alt="asdfd" src={card3} />
                       </a>
                     </div>
                     <div class="carousel-cell">
                       <a href="https://vangoldfinance.medium.com/titans-ventures-is-excited-to-host-the-next-ama-with-vangold-finance-b48c8828c119">
-                        <img src={card1} />
+                        <img alt="asdfd" src={card1} />
                       </a>
                     </div>
                     <div class="carousel-cell">
                       <a href="https://vangoldfinance.medium.com/dva-will-host-ama-vangold-in-room-d-va-community-26-september-2pm-utc-50-for-top-10-314783716e1a">
-                        <img src={card3} />
+                        <img alt="asdfd" src={card3} />
                       </a>
                     </div>
                     <div class="carousel-cell">
                       <a href="https://vangoldfinance.medium.com/vangold-v2-official-airdrop-live-aec9f33f914d">
-                        <img src={card2} />
+                        <img alt="asdfd" src={card2} />
                       </a>
                     </div>
                     <div class="carousel-cell">
                       <a href="https://vangoldfinance.medium.com/titans-ventures-is-excited-to-host-the-next-ama-with-vangold-finance-b48c8828c119">
-                        <img src={card1} />
+                        <img alt="asdfd" src={card1} />
                       </a>
                     </div>
                     <div class="carousel-cell">
                       <a href="https://vangoldfinance.medium.com/dva-will-host-ama-vangold-in-room-d-va-community-26-september-2pm-utc-50-for-top-10-314783716e1a">
-                        <img src={card3} />
+                        <img alt="asdfd" src={card3} />
                       </a>
                     </div>
                     <div class="carousel-cell">
                       <a href="https://vangoldfinance.medium.com/vangold-v2-official-airdrop-live-aec9f33f914d">
-                        <img src={card2} />
+                        <img alt="asdfd" src={card2} />
                       </a>
                     </div>
                   </div>
@@ -480,8 +480,8 @@ export default class Home extends React.Component {
                     <a href="https://t.me/vangoldtoken1">Join the community</a>
                   </div>
                   <div className="right-d">
-                    <img className="img1" src={sec7Img1} />
-                    <img className="img2" src={sec7Img2} />
+                    <img alt="asdfd" className="img1" src={sec7Img1} />
+                    <img alt="asdfd" className="img2" src={sec7Img2} />
                   </div>
                 </div>
               </div>
@@ -492,7 +492,7 @@ export default class Home extends React.Component {
             <div className="container">
               <div className="col1">
                 <Link to="/" className="brand-wrap">
-                  <img className="brand-img" src={logo} />
+                  <img alt="asdfd" className="brand-img" src={logo} />
                   <span>Vangold</span>
                 </Link>
                 <p className="p1">Copyright © 2021 Vangold Finance.</p>
@@ -502,22 +502,22 @@ export default class Home extends React.Component {
                     href="https://instagram.com/vangoldfinance?r=nametag"
                     className="circle"
                   >
-                    <img src={insta} />
+                    <img alt="asdfd" src={insta} />
                   </a>
                   <a href="https://vangold.finance/" className="circle">
-                    <img src={basket} />
+                    <img alt="asdfd" src={basket} />
                   </a>
                   <a
                     href="https://twitter.com/vangoldfinance"
                     className="circle"
                   >
-                    <img src={twitter} />
+                    <img alt="asdfd" src={twitter} />
                   </a>
                   <a
                     href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
                     className="circle"
                   >
-                    <img src={youtube} />
+                    <img alt="asdfd" src={youtube} />
                   </a>
                 </div>
               </div>
@@ -544,7 +544,7 @@ export default class Home extends React.Component {
                     type="text"
                     placeholder="Your email address"
                   />
-                  <img src={send} />
+                  <img alt="asdfd" src={send} />
                 </label>
               </div>
             </div>
@@ -555,14 +555,14 @@ export default class Home extends React.Component {
           <div className="header">
             <div className="container">
               <Link to="/" className="l-div">
-                <img src={headerLogo} alt="asdf" />
+                <img alt="asdfd" src={headerLogo} alt="asdf" />
                 <span>Vangold</span>
               </Link>
               <div className="r-div">
                 <a href="https://t.me/vangoldtoken1" className="join-btn">
                   Join the Network
                 </a>
-                <img onClick={this.handleMenu} src={menuIcon} />
+                <img alt="asdfd" onClick={this.handleMenu} src={menuIcon} />
               </div>
             </div>
           </div>
@@ -577,9 +577,9 @@ export default class Home extends React.Component {
                   {" "}
                   <p>Community</p>
                   {this.state.subMenu1 === true ? (
-                    <img src={up} />
+                    <img alt="asdfd" src={up} />
                   ) : (
-                    <img src={down} />
+                    <img alt="asdfd" src={down} />
                   )}
                 </div>
                 {this.state.subMenu1 === true ? (
@@ -601,9 +601,9 @@ export default class Home extends React.Component {
                 <div onClick={() => this.subMenu2()} className="menu-head">
                   <p>Documentation</p>
                   {this.state.subMenu2 === true ? (
-                    <img src={up} />
+                    <img alt="asdfd" src={up} />
                   ) : (
-                    <img src={down} />
+                    <img alt="asdfd" src={down} />
                   )}
                 </div>
                 {this.state.subMenu2 === true ? (
@@ -619,9 +619,9 @@ export default class Home extends React.Component {
                 <div onClick={() => this.subMenu3()} className="menu-head">
                   <p>Markets</p>
                   {this.state.subMenu3 === true ? (
-                    <img src={up} />
+                    <img alt="asdfd" src={up} />
                   ) : (
-                    <img src={down} />
+                    <img alt="asdfd" src={down} />
                   )}
                 </div>
                 {this.state.subMenu3 === true ? (
@@ -670,16 +670,16 @@ export default class Home extends React.Component {
                           <div className="up-d">
                             <div className="brand-wrap">
                               <figure>
-                                <img src={newImg1} />
+                                <img alt="asdfd" src={newImg1} />
                               </figure>
                               <span>Vangold</span>
                             </div>
-                            <img src={chart} />
+                            <img alt="asdfd" src={chart} />
                           </div>
                           <div className="down-d">
                             <span className="span1">$0.001402</span>
                             <div className="text-wrap">
-                              <img src={greenUp} />
+                              <img alt="asdfd" src={greenUp} />
                               <span>3.87%</span>
                             </div>
                           </div>
@@ -688,16 +688,16 @@ export default class Home extends React.Component {
                           <div className="up-d">
                             <div className="brand-wrap">
                               <figure>
-                                <img src={newImg} />
+                                <img alt="asdfd" src={newImg} />
                               </figure>
                               <span>Vangoldswap</span>
                             </div>
-                            <img src={chart} />
+                            <img alt="asdfd" src={chart} />
                           </div>
                           <div className="down-d">
                             <span className="span1">$0.001402</span>
                             <div className="text-wrap">
-                              <img src={greenUp} />
+                              <img alt="asdfd" src={greenUp} />
                               <span>3.87%</span>
                             </div>
                           </div>
@@ -711,7 +711,7 @@ export default class Home extends React.Component {
                         </h2>
                         <div className="lower-d">
                           <div className="bin-wrap">
-                            <img src={binance} />
+                            <img alt="asdfd" src={binance} />
                             <span>Binance</span>
                           </div>
                         </div>
@@ -732,7 +732,7 @@ export default class Home extends React.Component {
                     </div>
 
                     <div className="left-fig">
-                      <img src={sec3Bg} />
+                      <img alt="asdfd" src={sec3Bg} />
                     </div>
                   </div>
 
@@ -751,7 +751,7 @@ export default class Home extends React.Component {
                     </div>
 
                     <div className="left-fig">
-                      <img src={sec4Bg} />
+                      <img alt="asdfd" src={sec4Bg} />
                     </div>
                   </div>
 
@@ -764,7 +764,7 @@ export default class Home extends React.Component {
                     <div className="boxes">
                       <div className="box">
                         <figure>
-                          <img src={icon1} />
+                          <img alt="asdfd" src={icon1} />
                         </figure>
                         <h4>Vangold Freelance</h4>
                         <p>
@@ -774,7 +774,7 @@ export default class Home extends React.Component {
                       </div>
                       <div className="box">
                         <figure>
-                          <img src={icon2} />
+                          <img alt="asdfd" src={icon2} />
                         </figure>
                         <h4>Vangold Pay</h4>
                         <p>
@@ -784,7 +784,7 @@ export default class Home extends React.Component {
                       </div>
                       <div className="box">
                         <figure>
-                          <img src={icon3} />
+                          <img alt="asdfd" src={icon3} />
                         </figure>
                         <h4>Vangold NFT</h4>
                         <p>
@@ -795,7 +795,7 @@ export default class Home extends React.Component {
                       </div>
                       <div className="box">
                         <figure>
-                          <img src={icon4} />
+                          <img alt="asdfd" src={icon4} />
                         </figure>
                         <h4>Vangold Mart</h4>
                         <p>
@@ -805,7 +805,7 @@ export default class Home extends React.Component {
                       </div>
                       <div className="box">
                         <figure>
-                          <img src={icon5} />
+                          <img alt="asdfd" src={icon5} />
                         </figure>
                         <h4>Vangold Metaverse</h4>
                         <p>
@@ -815,7 +815,7 @@ export default class Home extends React.Component {
                       </div>
                       <div className="box">
                         <figure>
-                          <img src={icon6} />
+                          <img alt="asdfd" src={icon6} />
                         </figure>
                         <h4>Vangold Web3.0</h4>
                         <p>
@@ -835,31 +835,31 @@ export default class Home extends React.Component {
                         data-flickity='{ "wrapAround": true }'
                       >
                         <div class="carousel-cell">
-                          <img src={card1} />
+                          <img alt="asdfd" src={card1} />
                         </div>
                         <div class="carousel-cell">
-                          <img src={card2} />
+                          <img alt="asdfd" src={card2} />
                         </div>
                         <div class="carousel-cell">
-                          <img src={card3} />
+                          <img alt="asdfd" src={card3} />
                         </div>
                         <div class="carousel-cell">
-                          <img src={card1} />
+                          <img alt="asdfd" src={card1} />
                         </div>
                         <div class="carousel-cell">
-                          <img src={card3} />
+                          <img alt="asdfd" src={card3} />
                         </div>
                         <div class="carousel-cell">
-                          <img src={card2} />
+                          <img alt="asdfd" src={card2} />
                         </div>
                         <div class="carousel-cell">
-                          <img src={card1} />
+                          <img alt="asdfd" src={card1} />
                         </div>
                         <div class="carousel-cell">
-                          <img src={card3} />
+                          <img alt="asdfd" src={card3} />
                         </div>
                         <div class="carousel-cell">
-                          <img src={card2} />
+                          <img alt="asdfd" src={card2} />
                         </div>
                       </div>
                     </div>
@@ -882,7 +882,7 @@ export default class Home extends React.Component {
                 <div className="container">
                   <div className="col1">
                     <Link to="/" className="brand-wrap">
-                      <img className="brand-img" src={logo} />
+                      <img alt="asdfd" className="brand-img" src={logo} />
                       <span>Vangold</span>
                     </Link>
 
@@ -893,7 +893,7 @@ export default class Home extends React.Component {
                         type="text"
                         placeholder="Your email address"
                       />
-                      <img src={send} />
+                      <img alt="asdfd" src={send} />
                     </label>
 
                     <p className="p1">Copyright © 2021 Vangold Finance.</p>
@@ -903,22 +903,22 @@ export default class Home extends React.Component {
                         href="https://instagram.com/vangoldfinance?r=nametag"
                         className="circle"
                       >
-                        <img src={insta} />
+                        <img alt="asdfd" src={insta} />
                       </a>
                       <a href="https://vangold.finance/" className="circle">
-                        <img src={basket} />
+                        <img alt="asdfd" src={basket} />
                       </a>
                       <a
                         href="https://twitter.com/vangoldfinance"
                         className="circle"
                       >
-                        <img src={twitter} />
+                        <img alt="asdfd" src={twitter} />
                       </a>
                       <a
                         href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
                         className="circle"
                       >
-                        <img src={youtube} />
+                        <img alt="asdfd" src={youtube} />
                       </a>
                     </div>
                   </div>

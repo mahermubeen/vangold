@@ -80,7 +80,7 @@ export default class About extends React.Component {
           <div className="header">
             <div className="container">
               <Link to="/" className="l-div">
-                <img src={headerLogo} alt="asdf" />
+                <img alt="asdfd" src={headerLogo} alt="asdf" />
                 <span>Vangold</span>
               </Link>
 
@@ -220,7 +220,7 @@ export default class About extends React.Component {
 
                 <div className="divs-wrap">
                   <div className="left-fig">
-                    <img src={sec3Bg} />
+                    <img alt="asdfd" src={sec3Bg} />
                   </div>
 
                   <div className="r-div">
@@ -246,7 +246,7 @@ export default class About extends React.Component {
             <div className="container">
               <div className="col1">
                 <Link to="/" className="brand-wrap">
-                  <img className="brand-img" src={logo} />
+                  <img alt="asdfd" className="brand-img" src={logo} />
                   <span>Vangold</span>
                 </Link>
                 <p className="p1">Copyright © 2021 Vangold Finance.</p>
@@ -256,22 +256,22 @@ export default class About extends React.Component {
                     href="https://instagram.com/vangoldfinance?r=nametag"
                     className="circle"
                   >
-                    <img src={insta} />
+                    <img alt="asdfd" src={insta} />
                   </a>
                   <a href="https://vangold.finance/" className="circle">
-                    <img src={basket} />
+                    <img alt="asdfd" src={basket} />
                   </a>
                   <a
                     href="https://twitter.com/vangoldfinance"
                     className="circle"
                   >
-                    <img src={twitter} />
+                    <img alt="asdfd" src={twitter} />
                   </a>
                   <a
                     href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
                     className="circle"
                   >
-                    <img src={youtube} />
+                    <img alt="asdfd" src={youtube} />
                   </a>
                 </div>
               </div>
@@ -298,7 +298,7 @@ export default class About extends React.Component {
                     type="text"
                     placeholder="Your email address"
                   />
-                  <img src={send} />
+                  <img alt="asdfd" src={send} />
                 </label>
               </div>
             </div>
@@ -309,12 +309,12 @@ export default class About extends React.Component {
           <div className="header">
             <div className="container">
               <Link to="/" className="l-div">
-                <img src={headerLogo} alt="asdf" />
+                <img alt="asdfd" src={headerLogo} alt="asdf" />
                 <span>Vangold</span>
               </Link>
               <div className="r-div">
                 <a href="https://t.me/vangoldtoken1" className="join-btn">Join the Network</a>
-                <img onClick={this.handleMenu} src={menuIcon} />
+                <img alt="asdfd" onClick={this.handleMenu} src={menuIcon} />
               </div>
             </div>
           </div>
@@ -329,9 +329,9 @@ export default class About extends React.Component {
                   {" "}
                   <p>Community</p>
                   {this.state.subMenu1 === true ? (
-                    <img src={up} />
+                    <img alt="asdfd" src={up} />
                   ) : (
-                    <img src={down} />
+                    <img alt="asdfd" src={down} />
                   )}
                 </div>
                 {this.state.subMenu1 === true ? (
@@ -349,9 +349,9 @@ export default class About extends React.Component {
                 <div onClick={() => this.subMenu2()} className="menu-head">
                   <p>Documentation</p>
                   {this.state.subMenu2 === true ? (
-                    <img src={up} />
+                    <img alt="asdfd" src={up} />
                   ) : (
-                    <img src={down} />
+                    <img alt="asdfd" src={down} />
                   )}
                 </div>
                 {this.state.subMenu2 === true ? (
@@ -365,9 +365,9 @@ export default class About extends React.Component {
                 <div onClick={() => this.subMenu3()} className="menu-head">
                   <p>Markets</p>
                   {this.state.subMenu3 === true ? (
-                    <img src={up} />
+                    <img alt="asdfd" src={up} />
                   ) : (
-                    <img src={down} />
+                    <img alt="asdfd" src={down} />
                   )}
                 </div>
                 {this.state.subMenu3 === true ? (
@@ -400,7 +400,7 @@ export default class About extends React.Component {
 
                     <div className="divs-wrap">
                       <div className="left-fig">
-                        <img src={sec3Bg} />
+                        <img alt="asdfd" src={sec3Bg} />
                       </div>
 
                       <div className="r-div">
@@ -426,7 +426,7 @@ export default class About extends React.Component {
                 <div className="container">
                   <div className="col1">
                     <div className="brand-wrap">
-                      <img className="brand-img" src={logo} />
+                      <img alt="asdfd" className="brand-img" src={logo} />
                       <span>Vangold</span>
                     </div>
 
@@ -437,7 +437,7 @@ export default class About extends React.Component {
                         type="text"
                         placeholder="Your email address"
                       />
-                      <img src={send} />
+                      <img alt="asdfd" src={send} />
                     </label>
 
                     <p className="p1">Copyright © 2021 Vangold Finance.</p>
@@ -447,22 +447,22 @@ export default class About extends React.Component {
                     href="https://instagram.com/vangoldfinance?r=nametag"
                     className="circle"
                   >
-                    <img src={insta} />
+                    <img alt="asdfd" src={insta} />
                   </a>
                   <a href="https://vangold.finance/" className="circle">
-                    <img src={basket} />
+                    <img alt="asdfd" src={basket} />
                   </a>
                   <a
                     href="https://twitter.com/vangoldfinance"
                     className="circle"
                   >
-                    <img src={twitter} />
+                    <img alt="asdfd" src={twitter} />
                   </a>
                   <a
                     href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
                     className="circle"
                   >
-                    <img src={youtube} />
+                    <img alt="asdfd" src={youtube} />
                   </a>
                 </div>
                   </div>
