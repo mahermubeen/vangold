@@ -7,7 +7,6 @@ import basket from "../img/basket.png";
 import twitter from "../img/twitter.png";
 import insta from "../img/insta.png";
 import youtube from "../img/youtube.png";
-import brandLogo from "../img/barnd-logo.png";
 import headerLogo from "../img/header-brand-logo.png";
 
 import down from "../img/arrow-down.png";
@@ -122,7 +121,10 @@ export default class Terms extends React.Component {
                   </span>
                   {this.state.individuals ? (
                     <div className="link-menu markets">
-                      <a href="https://vangoldswap.finance/" className="stake-p">
+                      <a
+                        href="https://vangoldswap.finance/"
+                        className="stake-p"
+                      >
                         Stake & Farm
                       </a>
                       <a href="https://pancakeswap.finance/swap?outputCurrency=0x487ecd4cFa635D1a9409E86Cd22d33d5abEb7b44">
@@ -651,9 +653,9 @@ export default class Terms extends React.Component {
                       Buy VGD
                     </a>
                     <Link to="/terms">Terms</Link>
-                      <Link to="/cookie-policy">Cookie Policy</Link>
-                      <Link to="/landing-page">Landing Page</Link>
-                      <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link to="/cookie-policy">Cookie Policy</Link>
+                    <Link to="/landing-page">Landing Page</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
                   </div>
                 ) : (
                   ""
@@ -1058,21 +1060,10 @@ export default class Terms extends React.Component {
               <div className="footer">
                 <div className="container">
                   <div className="col1">
-                    <div className="brand-wrap">
+                    <Link to="/" className="brand-wrap">
                       <img alt="asdfd" className="brand-img" src={logo} />
                       <span>Vangold</span>
-                    </div>
-
-                    <h6>Stay up to date</h6>
-                    <label for="email" className="e-input">
-                      <input
-                        id="email"
-                        type="text"
-                        placeholder="Your email address"
-                      />
-                      <img alt="asdfd" src={send} />
-                    </label>
-
+                    </Link>
                     <p className="p1">Copyright © 2021 Vangold Finance.</p>
                     <p className="p2">All rights reserved</p>
                     <div className="socials">
@@ -1101,23 +1092,31 @@ export default class Terms extends React.Component {
                   </div>
                   <div className="col2">
                     <h6>Company</h6>
-                    <div className="links">
-                      <a href="#">About us</a>
-                      <a href="#">Blog</a>
-                      <a href="#">Contact us</a>
-                      <a href="#">Pricing</a>
-                      <a href="#">Testimonials</a>
-                    </div>
+                    <Link to="/about">About us</Link>
+                    <a href="https://vangoldfinance.medium.com/">Blog</a>
+                    <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
+                    <Link to="/">Pricing</Link>
+                    <Link to="/">Testimonials</Link>
                   </div>
                   <div className="col3">
                     <h6>Support</h6>
-                    <div className="links">
-                      <a href="#">Help center</a>
-                      <a href="#">Terms of service</a>
-                      <a href="#">Legal</a>
-                      <a href="#">Privacy policy</a>
-                      <a href="#">Status</a>
-                    </div>
+                    <a href="Mailto:vangoldtoken@vangold.finance">
+                      Help center
+                    </a>
+                    <Link to="/terms">Terms of service</Link>
+                    <Link to="/cookie-policy">Cookie Policy</Link>
+                    <Link to="/privacy-policy">Privacy policy</Link>
+                  </div>
+                  <div className="col4">
+                    <h6>Stay up to date</h6>
+                    <label for="email" className="e-input">
+                      <input
+                        id="email"
+                        type="text"
+                        placeholder="Your email address"
+                      />
+                      <img alt="asdfd" src={send} />
+                    </label>
                   </div>
                 </div>
               </div>
