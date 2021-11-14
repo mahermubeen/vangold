@@ -1,0 +1,33 @@
+import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
+
+// Containers
+import Home from "./pages/Home";
+import TermsPage from "./pages/Terms";
+import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import CookiePolicy from "./pages/CookiePolicy";
+import LandingPage from "./pages/LandingPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Roadmap from "./pages/Roadmap";
+
+
+class Routes extends Component {
+  render() {
+    return (
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/terms" exact component={TermsPage} />
+        <Route path="/about" exact component={About} />
+        <Route path="/cookie-policy" exact component={CookiePolicy} />
+        <Route path="/landing-page" exact component={LandingPage} />
+        <Route path="/privacy-policy" exact component={PrivacyPolicy} />
+        <Route path="/roadmap" exact component={Roadmap} />
+
+        <Route component={NotFound} />
+      </Switch>
+    );
+  }
+}
+
+export default Routes;
