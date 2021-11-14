@@ -70,7 +70,7 @@ export default class PrivacyPolicy extends React.Component {
           <div className="header">
             <div className="container">
               <Link to="/" className="l-div">
-                <img alt="asdfd" src={headerLogo} alt="asdf" />
+                <img alt="asdfd" src={headerLogo} />
                 <span>Vangold</span>
               </Link>
 
@@ -535,7 +535,7 @@ export default class PrivacyPolicy extends React.Component {
           <div className="header">
             <div className="container">
               <Link to="/" className="l-div">
-                <img alt="asdfd" src={headerLogo} alt="asdf" />
+                <img alt="asdfd" src={headerLogo} />
                 <span>Vangold</span>
               </Link>
               <div className="r-div">
