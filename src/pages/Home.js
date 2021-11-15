@@ -114,10 +114,15 @@ export default class Home extends React.Component {
                   </span>
                   {this.state.community ? (
                     <div className="link-menu">
-                      <a href="https://drive.google.com/file/d/1RnIm59CoclsjOOtYGOBii8aZ_2TL3w_x/view?usp=drivesdk">
-                        Whitepaper
+                      <a href="https://t.me/vangoldtoken1">Telegram</a>
+                      <a href="https://twitter.com/vangoldfinance">Twitter</a>
+                      <a href="https://www.reddit.com/user/vangoldtoken">
+                        Reddit
                       </a>
-                      <Link to="/roadmap">Roadmap</Link>
+                      <a href="https://discord.gg/s3vVfBEFrc">Discord</a>
+                      <a href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw">
+                        Youtube
+                      </a>
                     </div>
                   ) : (
                     ""
@@ -130,15 +135,10 @@ export default class Home extends React.Component {
 
                   {this.state.developers ? (
                     <div className="link-menu doc-menu">
-                      <a href="https://t.me/vangoldtoken1">Telegram</a>
-                      <a href="https://twitter.com/vangoldfinance">Twitter</a>
-                      <a href="https://www.reddit.com/user/vangoldtoken">
-                        Reddit
+                      <a href="https://drive.google.com/file/d/1RnIm59CoclsjOOtYGOBii8aZ_2TL3w_x/view?usp=drivesdk">
+                        Whitepaper
                       </a>
-                      <a href="https://discord.gg/s3vVfBEFrc">Discord</a>
-                      <a href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw">
-                        Youtube
-                      </a>
+                      <Link to="/roadmap">Roadmap</Link>
                     </div>
                   ) : (
                     ""

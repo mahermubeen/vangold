@@ -1121,7 +1121,7 @@ canvas {
 .home .main-content .container .sec1 .l-sec h2 {
   font-style: normal;
   font-weight: 800;
-  font-size: 48px;
+  font-size: 60px;
   color: white;
   margin-bottom: 16px;
 }
@@ -5937,7 +5937,6 @@ canvas {
   cursor: pointer;
 }
 .roadmap-mobile .main-content .sec1 .row1-wrap {
-  z-index: 2;
   position: relative;
 }
 .roadmap-mobile .main-content .sec1 .row1-wrap .row1 {
@@ -5981,7 +5980,7 @@ canvas {
   position: absolute;
   right: -52px;
   top: 136%;
-  z-index: 5;
+  z-index: 8;
 }
 .roadmap-mobile .main-content .sec1 .row1-wrap .menu1-wrap .p-wrap {
   background: url("./img/menu-one.png") no-repeat;
@@ -6131,7 +6130,7 @@ canvas {
 .roadmap-mobile .main-content .sec1 .img-icon3-wrap {
   position: relative;
   left: 13%;
-  top: 12%;
+  top: 3%;
   display: flex;
   flex-direction: column;
   align-items: end;

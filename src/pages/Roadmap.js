@@ -227,213 +227,377 @@ export default class Roadmap extends React.Component {
                 </div>
               </div>
 
-              <div className="row1-wrap">
-                <div className="row1">
-                  <img
-                  alt="asdf"
-                    className="loc-icon"
-                    onClick={this.menu1}
-                    src={locationIcon}
-                  />
-                  <span>Vangold Service Roadmap</span>
-                </div>
-
-                <div className="click-wrap">
-                  <img alt="asdfd" src={clickBG} />
-                  <span>Click</span>
-                </div>
-
-                {this.state.menu1 ? (
-                  <div className="menu1-wrap">
-                    <div className="p-wrap">
-                      <p className="p1">
-                        The Vangold share screen feature will be a huge leap for
-                        Vangold’s freelancer platform with many functionalities,
-                        including video call support, group chat, and
-                        conferencing support. The features will provide the best
-                        experience for business users, cutting across user
-                        experience to build more professional and trust-inclined
-                        relationships.
-                      </p>
+              {this.state.toggle === true ? (
+                <div>
+                  <div className="row1-wrap">
+                    <div className="row1">
+                      <img
+                        alt="asdf"
+                        className="loc-icon"
+                        onClick={this.menu1}
+                        src={locationIcon}
+                      />
+                      <span>Vangold Finance Roadmap</span>
                     </div>
-                    <button>Vangold Share Screen Integeration</button>
-                  </div>
-                ) : (
-                  ""
-                )}
-              </div>
 
-              <div className="row2">
-                <img alt="asdfd" className="line1" src={line1} />
-              </div>
-              <div className="img-icon2-wrap">
-                {this.state.toggle ? (
-                  <div className="left-icon-wrap">
-                    <img
-                    alt="asdf"
-                      src={locationIcon}
-                      onClick={this.menu7}
-                      className="loc-icon"
-                    />
-                    <span>Vangold Swap Roadmap</span>
+                    <div className="click-wrap">
+                      <img alt="asdfd" src={clickBG} />
+                      <span>Click</span>
+                    </div>
 
-                    {this.state.menu7 ? (
-                      <div className="menu7-wrap">
+                    {this.state.menu1 ? (
+                      <div className="menu1-wrap">
                         <div className="p-wrap">
                           <p className="p1">
-                            The Vangold decentralized exchange will have a
-                            remarkable remodeling in a few weeks. On the list
-                            for the Roadmap is the introduction of the Vangold
-                            lottery system and a huge burn. And we'll see the
-                            layered-farming feature too. Vangold’s lottery
-                            campaign will offer rewards for matching tickets and
-                            numbers. We'll list Vangold Swap on Coinmarketcap
-                            and have an audit with Techrate, adopting Vangold
-                            Swap tokens as rewards within the Vangold platforms.
+                            Introduction of Vangold across multiple chains, some
+                            of which are Solana, Polygon, and Avalanche.
                           </p>
                         </div>
-                        <button>VGD Swap Roadmap</button>
+                        <button>Multiple Cross-Chain Bridges</button>
                       </div>
                     ) : (
                       ""
                     )}
                   </div>
-                ) : (
-                  ""
-                )}
-
-                <img
-                alt="asdf"
-                  src={locationIcon}
-                  onClick={this.menu2}
-                  className="loc-icon"
-                />
-                <img alt="asdfd" className="line2" src={line2} />
-
-                {this.state.menu2 ? (
-                  <div className="menu2-wrap">
-                    <div className="p-wrap">
-                      <p className="p1">
-                        Before now, the platform could only support the transfer
-                        of tokens from buyers to sellers after purchasing a
-                        service. The introduction of this feature will allow
-                        users to perform inter-account transactions
-                        effortlessly. Team/members will also share tokens
-                        amongst themselves easily. Further modifications to this
-                        feature will allow group or companies owners to pay
-                        bills through a secured payroll system.
-                      </p>
-                    </div>
-                    <button>Token Support Protocol</button>
+                  <div className="row2">
+                    <img alt="asdfd" className="line1" src={line1} />
                   </div>
-                ) : (
-                  ""
-                )}
-              </div>
-              <div className="img-icon3-wrap">
-                <img
-                alt="asdf"
-                  src={locationIcon}
-                  onClick={this.menu3}
-                  className="loc-icon"
-                />
-                <img alt="asdfd" className="line3" src={line3} />
+                  <div className="img-icon2-wrap">
+                    <img
+                      alt="asdf"
+                      src={locationIcon}
+                      onClick={this.menu2}
+                      className="loc-icon"
+                    />
+                    <img alt="asdfd" className="line2" src={line2} />
 
-                {this.state.menu3 ? (
-                  <div className="menu3-wrap">
-                    <div className="p-wrap">
-                      <p className="p1">
-                        Vangold Services will introduce the mobile app for its
-                        freelance sourcing service to give a more personalized
-                        usage. Subsequently, the company will add newer features
-                        to enable easy usage and flexible customization of the
-                        app’s dashboard.
-                      </p>
-                    </div>
-                    <button>Mobile App Launch</button>
+                    {this.state.menu2 ? (
+                      <div className="menu2-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            We’ll introduce the Vangold token as a payment
+                            method for various platforms like Amazon, Walmart,
+                            and many blockchain-based platforms through our
+                            various partnerships.
+                          </p>
+                        </div>
+                        <button>VGD Token Usage</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
                   </div>
-                ) : (
-                  ""
-                )}
-              </div>
-              <div className="img-icon4-wrap">
-                <img
-                alt="asdf"
-                  className="img1 loc-icon"
-                  onClick={this.menu4}
-                  src={locationIcon}
-                />
-                <img alt="asdfd" className="line4" src={line4} />
+                  <div className="img-icon3-wrap">
+                    <img
+                      alt="asdf"
+                      src={locationIcon}
+                      onClick={this.menu3}
+                      className="loc-icon"
+                    />
+                    <img alt="asdfd" className="line3" src={line3} />
 
-                {this.state.menu4 ? (
-                  <div className="menu4-wrap">
-                    <div className="p-wrap">
-                      <p className="p1">
-                        Vangold reselling tool is a special web aid tool that’ll
-                        help developers, designers, and other freelancers ease
-                        their jobs and complete more tasks with ease.
-                      </p>
-                    </div>
-                    <button>VGD Reselling Tool</button>
+                    {this.state.menu3 ? (
+                      <div className="menu3-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            Vangold Pay is a payment solution for the Vangold
+                            ecosystem supporting the buying, selling, sending,
+                            and receiving of Vangold tokens. Subsequently,
+                            Vangold Services will develop and integrate
+                            invaluable features into the Vangold Pay system,
+                            enabling it to scale, perform faster transactions,
+                            and work perfectly in the metaverse.
+                          </p>
+                        </div>
+                        <button>VGD Token Usage</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
                   </div>
-                ) : (
-                  ""
-                )}
-              </div>
-              <div className="img-icon5-wrap">
-                <img
-                alt="asdf"
-                  className="loc-icon"
-                  onClick={this.menu5}
-                  src={locationIcon}
-                />
-                <img alt="asdfd" className="line5" src={line5} />
+                  <div className="img-icon4-wrap">
+                    <img
+                      alt="asdf"
+                      className="img1 loc-icon"
+                      onClick={this.menu4}
+                      src={locationIcon}
+                    />
+                    <img alt="asdfd" className="line4" src={line4} />
 
-                {this.state.menu5 ? (
-                  <div className="menu5-wrap">
-                    <div className="p-wrap">
-                      <p className="p1">
-                        Vangold Services will introduce the metaverse into its
-                        platform to allow users to host virtual reality meetings
-                        and virtual conferences. The metaverse will also connect
-                        workers from the same category who share similar
-                        interests. Vangold will also make further modifications
-                        to allow users to exchange funds, own houses and lands,
-                        and even get different jobs within the metaverse.
-                      </p>
-                    </div>
-                    <button>Metaverse Introduction</button>
+                    {this.state.menu4 ? (
+                      <div className="menu4-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            The Vangold debit/credit card will allow users to
+                            checkout in other platforms using their debit card
+                            directly from Vangold wallets.
+                          </p>
+                        </div>
+                        <button>VGD Debit/Credit Card</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
                   </div>
-                ) : (
-                  ""
-                )}
-              </div>
-              <div className="last-img">
-                <img
-                alt="asdf"
-                  className="loc-icon"
-                  onClick={this.menu6}
-                  src={locationIcon}
-                />
+                  <div className="img-icon5-wrap">
+                    <img
+                      alt="asdf"
+                      className="loc-icon"
+                      onClick={this.menu5}
+                      src={locationIcon}
+                    />
+                    <img alt="asdfd" className="line5" src={line5} />
 
-                {this.state.menu6 ? (
-                  <div className="menu6-wrap">
-                    <div className="p-wrap">
-                      <p className="p1">
-                        This initiative is a combination of social media,
-                        gaming, and the metaverse. It creates a room where users
-                        with similar interests meet and communicate within a
-                        social media/business virtual environment. Users can
-                        share ideas within the metaverse. Companies can create a
-                        virtual environment where they manage their team.
-                      </p>
-                    </div>
-                    <button>Gamification Support</button>
+                    {this.state.menu5 ? (
+                      <div className="menu5-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            The Vangold Finance app helps users manage funds in
+                            their Vangold wallet that includes the Vangold Pay
+                            service.
+                          </p>
+                        </div>
+                        <button>NFT Games</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
                   </div>
-                ) : (
-                  ""
-                )}
-              </div>
+                  <div className="last-img">
+                    <img
+                      alt="asdf"
+                      className="loc-icon"
+                      onClick={this.menu6}
+                      src={locationIcon}
+                    />
+
+                    {this.state.menu6 ? (
+                      <div className="menu6-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            The NFT game is the new era of VR/AR evolution,
+                            allowing users to play games within a virtual
+                            environment.
+                          </p>
+                        </div>
+                        <button>VGD Gold Pool</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </div>
+              ) : (
+                <div>
+                  <div className="row1-wrap">
+                    <div className="row1">
+                      <img
+                        alt="asdf"
+                        className="loc-icon"
+                        onClick={this.menu1}
+                        src={locationIcon}
+                      />
+                      <span>Vangold Service Roadmap</span>
+                    </div>
+
+                    <div className="click-wrap">
+                      <img alt="asdfd" src={clickBG} />
+                      <span>Click</span>
+                    </div>
+
+                    {this.state.menu1 ? (
+                      <div className="menu1-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            The Vangold share screen feature will be a huge leap
+                            for Vangold’s freelancer platform with many
+                            functionalities, including video call support, group
+                            chat, and conferencing support. The features will
+                            provide the best experience for business users,
+                            cutting across user experience to build more
+                            professional and trust-inclined relationships.
+                          </p>
+                        </div>
+                        <button>Vangold Share Screen Integeration</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  <div className="row2">
+                    <img alt="asdfd" className="line1" src={line1} />
+                  </div>
+                  <div className="img-icon2-wrap">
+                    <div className="left-icon-wrap">
+                      <img
+                        alt="asdf"
+                        src={locationIcon}
+                        onClick={this.menu7}
+                        className="loc-icon"
+                      />
+                      <span>Vangold Swap Roadmap</span>
+
+                      {this.state.menu7 ? (
+                        <div className="menu7-wrap">
+                          <div className="p-wrap">
+                            <p className="p1">
+                              The Vangold decentralized exchange will have a
+                              remarkable remodeling in a few weeks. On the list
+                              for the Roadmap is the introduction of the Vangold
+                              lottery system and a huge burn. And we'll see the
+                              layered-farming feature too. Vangold’s lottery
+                              campaign will offer rewards for matching tickets
+                              and numbers. We'll list Vangold Swap on
+                              Coinmarketcap and have an audit with Techrate,
+                              adopting Vangold Swap tokens as rewards within the
+                              Vangold platforms.
+                            </p>
+                          </div>
+                          <button>VGD Swap Roadmap</button>
+                        </div>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+
+                    <img
+                      alt="asdf"
+                      src={locationIcon}
+                      onClick={this.menu2}
+                      className="loc-icon"
+                    />
+                    <img alt="asdfd" className="line2" src={line2} />
+
+                    {this.state.menu2 ? (
+                      <div className="menu2-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            Before now, the platform could only support the
+                            transfer of tokens from buyers to sellers after
+                            purchasing a service. The introduction of this
+                            feature will allow users to perform inter-account
+                            transactions effortlessly. Team/members will also
+                            share tokens amongst themselves easily. Further
+                            modifications to this feature will allow group or
+                            companies owners to pay bills through a secured
+                            payroll system.
+                          </p>
+                        </div>
+                        <button>Token Support Protocol</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  <div className="img-icon3-wrap">
+                    <img
+                      alt="asdf"
+                      src={locationIcon}
+                      onClick={this.menu3}
+                      className="loc-icon"
+                    />
+                    <img alt="asdfd" className="line3" src={line3} />
+
+                    {this.state.menu3 ? (
+                      <div className="menu3-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            Vangold Services will introduce the mobile app for
+                            its freelance sourcing service to give a more
+                            personalized usage. Subsequently, the company will
+                            add newer features to enable easy usage and flexible
+                            customization of the app’s dashboard.
+                          </p>
+                        </div>
+                        <button>Mobile App Launch</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  <div className="img-icon4-wrap">
+                    <img
+                      alt="asdf"
+                      className="img1 loc-icon"
+                      onClick={this.menu4}
+                      src={locationIcon}
+                    />
+                    <img alt="asdfd" className="line4" src={line4} />
+
+                    {this.state.menu4 ? (
+                      <div className="menu4-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            Vangold reselling tool is a special web aid tool
+                            that’ll help developers, designers, and other
+                            freelancers ease their jobs and complete more tasks
+                            with ease.
+                          </p>
+                        </div>
+                        <button>VGD Reselling Tool</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  <div className="img-icon5-wrap">
+                    <img
+                      alt="asdf"
+                      className="loc-icon"
+                      onClick={this.menu5}
+                      src={locationIcon}
+                    />
+                    <img alt="asdfd" className="line5" src={line5} />
+
+                    {this.state.menu5 ? (
+                      <div className="menu5-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            Vangold Services will introduce the metaverse into
+                            its platform to allow users to host virtual reality
+                            meetings and virtual conferences. The metaverse will
+                            also connect workers from the same category who
+                            share similar interests. Vangold will also make
+                            further modifications to allow users to exchange
+                            funds, own houses and lands, and even get different
+                            jobs within the metaverse.
+                          </p>
+                        </div>
+                        <button>Metaverse Introduction</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  <div className="last-img">
+                    <img
+                      alt="asdf"
+                      className="loc-icon"
+                      onClick={this.menu6}
+                      src={locationIcon}
+                    />
+
+                    {this.state.menu6 ? (
+                      <div className="menu6-wrap">
+                        <div className="p-wrap">
+                          <p className="p1">
+                            This initiative is a combination of social media,
+                            gaming, and the metaverse. It creates a room where
+                            users with similar interests meet and communicate
+                            within a social media/business virtual environment.
+                            Users can share ideas within the metaverse.
+                            Companies can create a virtual environment where
+                            they manage their team.
+                          </p>
+                        </div>
+                        <button>Gamification Support</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
@@ -619,288 +783,459 @@ export default class Roadmap extends React.Component {
                         </div>
                       </div>
 
-                      <div className="row1-wrap">
-                        <div className="row1">
-                          <img
-                            alt="asdf"
-                            className="loc-icon"
-                            onClick={this.menu1}
-                            src={locationIconMob}
-                          />
-                          <span>Vangold Service Roadmap</span>
-                        </div>
-
-                        <div className="click-wrap">
-                          <img alt="asdfd" src={clickBG} />
-                          <span>Click</span>
-                        </div>
-
-                        {this.state.menu1 ? (
-                          <div className="menu1-wrap">
-                            <div className="p-wrap">
-                              <p className="p1">
-                                The Vangold share screen feature will be a huge
-                                leap for Vangold’s freelancer platform with many
-                                functionalities, including video call support,
-                                group chat, and conferencing support. The
-                                features will provide the best experience for
-                                business users, cutting across user experience
-                                to build more professional and trust-inclined
-                                relationships.
-                              </p>
+                      {this.state.toggle ? (
+                        <div>
+                          <div className="row1-wrap">
+                            <div className="row1">
+                              <img
+                                alt="asdf"
+                                className="loc-icon"
+                                onClick={this.menu1}
+                                src={locationIconMob}
+                              />
+                              <span>Vangold Finance Roadmap</span>
                             </div>
-                            <button>Vangold Share Screen Integeration</button>
-                          </div>
-                        ) : (
-                          ""
-                        )}
-                      </div>
 
-                      <div className="row2">
-                        <img alt="asdfd" className="line1" src={line1Mob} />
-                        {this.state.toggle ? (
-                          <div className="left-icon-wrap">
-                            <img
-                            alt="asdf"
-                              src={locationIconMob}
-                              onClick={this.menu7}
-                              className="loc-icon"
-                            />
-                            <span>Vangold Swap Roadmap</span>
+                            <div className="click-wrap">
+                              <img alt="asdfd" src={clickBG} />
+                              <span>Click</span>
+                            </div>
 
-                            {this.state.menu7 ? (
-                              <div className="menu7-wrap">
+                            {this.state.menu1 ? (
+                              <div className="menu1-wrap">
                                 <div className="p-wrap">
                                   <p className="p1">
-                                    The Vangold decentralized exchange will have
-                                    a remarkable remodeling in a few weeks. On
-                                    the list for the Roadmap is the introduction
-                                    of the Vangold lottery system and a huge
-                                    burn. And we'll see the layered-farming
-                                    feature too. Vangold’s lottery campaign will
-                                    offer rewards for matching tickets and
-                                    numbers. We'll list Vangold Swap on
-                                    Coinmarketcap and have an audit with
-                                    Techrate, adopting Vangold Swap tokens as
-                                    rewards within the Vangold platforms.
+                                    Introduction of Vangold across multiple
+                                    chains, some of which are Solana, Polygon,
+                                    and Avalanche.
                                   </p>
                                 </div>
-                                <button>VGD Swap Roadmap</button>
+                                <button>Multiple Cross-Chain Bridges</button>
                               </div>
                             ) : (
                               ""
                             )}
                           </div>
-                        ) : (
-                          ""
-                        )}
-                      </div>
-                      <div className="img-icon2-wrap">
-                        <img
-                        alt="asdf"
-                          src={locationIconMob}
-                          onClick={this.menu2}
-                          className="loc-icon"
-                        />
-                        <img alt="asdfd" className="line2" src={line2Mob} />
-
-                        {this.state.menu2 ? (
-                          <div className="menu2-wrap">
-                            <div className="p-wrap">
-                              <p className="p1">
-                                Before now, the platform could only support the
-                                transfer of tokens from buyers to sellers after
-                                purchasing a service. The introduction of this
-                                feature will allow users to perform
-                                inter-account transactions effortlessly.
-                                Team/members will also share tokens amongst
-                                themselves easily. Further modifications to this
-                                feature will allow group or companies owners to
-                                pay bills through a secured payroll system.
-                              </p>
-                            </div>
-                            <button>Token Support Protocol</button>
+                          <div className="row2">
+                            <img alt="asdfd" className="line1" src={line1Mob} />
                           </div>
-                        ) : (
-                          ""
-                        )}
-                      </div>
-                      <div className="img-icon3-wrap">
-                        <img
-                        alt="asdf"
-                          src={locationIconMob}
-                          onClick={this.menu3}
-                          className="loc-icon icon"
-                        />
-                        <img alt="asdfd" className="line3" src={line3Mob} />
+                          <div className="img-icon2-wrap">
+                            <img
+                              alt="asdf"
+                              src={locationIconMob}
+                              onClick={this.menu2}
+                              className="loc-icon"
+                            />
+                            <img alt="asdfd" className="line2" src={line2Mob} />
 
-                        {this.state.menu3 ? (
-                          <div className="menu3-wrap">
-                            <div className="p-wrap">
-                              <p className="p1">
-                                Vangold Services will introduce the mobile app
-                                for its freelance sourcing service to give a
-                                more personalized usage. Subsequently, the
-                                company will add newer features to enable easy
-                                usage and flexible customization of the app’s
-                                dashboard.
-                              </p>
-                            </div>
-                            <button>Mobile App Launch</button>
+                            {this.state.menu2 ? (
+                              <div className="menu2-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    We’ll introduce the Vangold token as a
+                                    payment method for various platforms like
+                                    Amazon, Walmart, and many blockchain-based
+                                    platforms through our various partnerships.
+                                  </p>
+                                </div>
+                                <button>VGD Token Usage</button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
                           </div>
-                        ) : (
-                          ""
-                        )}
-                      </div>
-                      <div className="img-icon4-wrap">
-                        <img
-                        alt="asdf"
-                          className="img1 loc-icon"
-                          onClick={this.menu4}
-                          src={locationIconMob}
-                        />
-                        <img alt="asdfd" className="line4" src={line4Mob} />
+                          <div className="img-icon3-wrap">
+                            <img
+                              alt="asdf"
+                              src={locationIconMob}
+                              onClick={this.menu3}
+                              className="loc-icon icon"
+                            />
+                            <img alt="asdfd" className="line3" src={line3Mob} />
 
-                        {this.state.menu4 ? (
-                          <div className="menu4-wrap">
-                            <div className="p-wrap">
-                              <p className="p1">
-                                Vangold reselling tool is a special web aid tool
-                                that’ll help developers, designers, and other
-                                freelancers ease their jobs and complete more
-                                tasks with ease.
-                              </p>
-                            </div>
-                            <button>VGD Reselling Tool</button>
+                            {this.state.menu3 ? (
+                              <div className="menu3-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    Vangold Pay is a payment solution for the
+                                    Vangold ecosystem supporting the buying,
+                                    selling, sending, and receiving of Vangold
+                                    tokens. Subsequently, Vangold Services will
+                                    develop and integrate invaluable features
+                                    into the Vangold Pay system, enabling it to
+                                    scale, perform faster transactions, and work
+                                    perfectly in the metaverse.
+                                  </p>
+                                </div>
+                                <button>VGD Token Usage</button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
                           </div>
-                        ) : (
-                          ""
-                        )}
-                      </div>
-                      <div className="img-icon5-wrap">
-                        <img
-                        alt="asdf"
-                          className="loc-icon"
-                          onClick={this.menu5}
-                          src={locationIconMob}
-                        />
-                        <img alt="asdfd" className="line5" src={line5Mob} />
+                          <div className="img-icon4-wrap">
+                            <img
+                              alt="asdf"
+                              className="img1 loc-icon"
+                              onClick={this.menu4}
+                              src={locationIconMob}
+                            />
+                            <img alt="asdfd" className="line4" src={line4Mob} />
 
-                        {this.state.menu5 ? (
-                          <div className="menu5-wrap">
-                            <div className="p-wrap">
-                              <p className="p1">
-                                Vangold Services will introduce the metaverse
-                                into its platform to allow users to host virtual
-                                reality meetings and virtual conferences. The
-                                metaverse will also connect workers from the
-                                same category who share similar interests.
-                                Vangold will also make further modifications to
-                                allow users to exchange funds, own houses and
-                                lands, and even get different jobs within the
-                                metaverse.
-                              </p>
-                            </div>
-                            <button>Metaverse Introduction</button>
+                            {this.state.menu4 ? (
+                              <div className="menu4-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    The Vangold debit/credit card will allow
+                                    users to checkout in other platforms using
+                                    their debit card directly from Vangold
+                                    wallets.
+                                  </p>
+                                </div>
+                                <button>VGD Debit/Credit Card</button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
                           </div>
-                        ) : (
-                          ""
-                        )}
-                      </div>
-                      <div className="last-img">
-                        <img
-                        alt="asdf"
-                          className="loc-icon"
-                          onClick={this.menu6}
-                          src={locationIconMob}
-                        />
+                          <div className="img-icon5-wrap">
+                            <img
+                              alt="asdf"
+                              className="loc-icon"
+                              onClick={this.menu5}
+                              src={locationIconMob}
+                            />
+                            <img alt="asdfd" className="line5" src={line5Mob} />
 
-                        {this.state.menu6 ? (
-                          <div className="menu6-wrap">
-                            <div className="p-wrap">
-                              <p className="p1">
-                                This initiative is a combination of social
-                                media, gaming, and the metaverse. It creates a
-                                room where users with similar interests meet and
-                                communicate within a social media/business
-                                virtual environment. Users can share ideas
-                                within the metaverse. Companies can create a
-                                virtual environment where they manage their
-                                team.
-                              </p>
-                            </div>
-                            <button>Gamification Support</button>
+                            {this.state.menu5 ? (
+                              <div className="menu5-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    The Vangold Finance app helps users manage
+                                    funds in their Vangold wallet that includes
+                                    the Vangold Pay service.
+                                  </p>
+                                </div>
+                                <button>NFT Games</button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
                           </div>
-                        ) : (
-                          ""
-                        )}
-                      </div>
+                          <div className="last-img">
+                            <img
+                              alt="asdf"
+                              className="loc-icon"
+                              onClick={this.menu6}
+                              src={locationIconMob}
+                            />
+
+                            {this.state.menu6 ? (
+                              <div className="menu6-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    The NFT game is the new era of VR/AR
+                                    evolution, allowing users to play games
+                                    within a virtual environment.
+                                  </p>
+                                </div>
+                                <button>VGD Gold Pool</button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                        </div>
+                      ) : (
+                        <div>
+                          <div className="row1-wrap">
+                            <div className="row1">
+                              <img
+                                alt="asdf"
+                                className="loc-icon"
+                                onClick={this.menu1}
+                                src={locationIconMob}
+                              />
+                              <span>Vangold Service Roadmap</span>
+                            </div>
+
+                            <div className="click-wrap">
+                              <img alt="asdfd" src={clickBG} />
+                              <span>Click</span>
+                            </div>
+
+                            {this.state.menu1 ? (
+                              <div className="menu1-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    The Vangold share screen feature will be a
+                                    huge leap for Vangold’s freelancer platform
+                                    with many functionalities, including video
+                                    call support, group chat, and conferencing
+                                    support. The features will provide the best
+                                    experience for business users, cutting
+                                    across user experience to build more
+                                    professional and trust-inclined
+                                    relationships.
+                                  </p>
+                                </div>
+                                <button>
+                                  Vangold Share Screen Integeration
+                                </button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                          <div className="row2">
+                            <img alt="asdfd" className="line1" src={line1Mob} />
+
+                            <div className="left-icon-wrap">
+                              <img
+                                alt="asdf"
+                                src={locationIconMob}
+                                onClick={this.menu7}
+                                className="loc-icon"
+                              />
+                              <span>Vangold Swap Roadmap</span>
+
+                              {this.state.menu7 ? (
+                                <div className="menu7-wrap">
+                                  <div className="p-wrap">
+                                    <p className="p1">
+                                      The Vangold decentralized exchange will
+                                      have a remarkable remodeling in a few
+                                      weeks. On the list for the Roadmap is the
+                                      introduction of the Vangold lottery system
+                                      and a huge burn. And we'll see the
+                                      layered-farming feature too. Vangold’s
+                                      lottery campaign will offer rewards for
+                                      matching tickets and numbers. We'll list
+                                      Vangold Swap on Coinmarketcap and have an
+                                      audit with Techrate, adopting Vangold Swap
+                                      tokens as rewards within the Vangold
+                                      platforms.
+                                    </p>
+                                  </div>
+                                  <button>VGD Swap Roadmap</button>
+                                </div>
+                              ) : (
+                                ""
+                              )}
+                            </div>
+                          </div>
+                          <div className="img-icon2-wrap">
+                            <img
+                              alt="asdf"
+                              src={locationIconMob}
+                              onClick={this.menu2}
+                              className="loc-icon"
+                            />
+                            <img alt="asdfd" className="line2" src={line2Mob} />
+
+                            {this.state.menu2 ? (
+                              <div className="menu2-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    Before now, the platform could only support
+                                    the transfer of tokens from buyers to
+                                    sellers after purchasing a service. The
+                                    introduction of this feature will allow
+                                    users to perform inter-account transactions
+                                    effortlessly. Team/members will also share
+                                    tokens amongst themselves easily. Further
+                                    modifications to this feature will allow
+                                    group or companies owners to pay bills
+                                    through a secured payroll system.
+                                  </p>
+                                </div>
+                                <button>Token Support Protocol</button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                          <div className="img-icon3-wrap">
+                            <img
+                              alt="asdf"
+                              src={locationIconMob}
+                              onClick={this.menu3}
+                              className="loc-icon icon"
+                            />
+                            <img alt="asdfd" className="line3" src={line3Mob} />
+
+                            {this.state.menu3 ? (
+                              <div className="menu3-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    Vangold Services will introduce the mobile
+                                    app for its freelance sourcing service to
+                                    give a more personalized usage.
+                                    Subsequently, the company will add newer
+                                    features to enable easy usage and flexible
+                                    customization of the app’s dashboard.
+                                  </p>
+                                </div>
+                                <button>Mobile App Launch</button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                          <div className="img-icon4-wrap">
+                            <img
+                              alt="asdf"
+                              className="img1 loc-icon"
+                              onClick={this.menu4}
+                              src={locationIconMob}
+                            />
+                            <img alt="asdfd" className="line4" src={line4Mob} />
+
+                            {this.state.menu4 ? (
+                              <div className="menu4-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    Vangold reselling tool is a special web aid
+                                    tool that’ll help developers, designers, and
+                                    other freelancers ease their jobs and
+                                    complete more tasks with ease.
+                                  </p>
+                                </div>
+                                <button>VGD Reselling Tool</button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                          <div className="img-icon5-wrap">
+                            <img
+                              alt="asdf"
+                              className="loc-icon"
+                              onClick={this.menu5}
+                              src={locationIconMob}
+                            />
+                            <img alt="asdfd" className="line5" src={line5Mob} />
+
+                            {this.state.menu5 ? (
+                              <div className="menu5-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    Vangold Services will introduce the
+                                    metaverse into its platform to allow users
+                                    to host virtual reality meetings and virtual
+                                    conferences. The metaverse will also connect
+                                    workers from the same category who share
+                                    similar interests. Vangold will also make
+                                    further modifications to allow users to
+                                    exchange funds, own houses and lands, and
+                                    even get different jobs within the
+                                    metaverse.
+                                  </p>
+                                </div>
+                                <button>Metaverse Introduction</button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                          <div className="last-img">
+                            <img
+                              alt="asdf"
+                              className="loc-icon"
+                              onClick={this.menu6}
+                              src={locationIconMob}
+                            />
+
+                            {this.state.menu6 ? (
+                              <div className="menu6-wrap">
+                                <div className="p-wrap">
+                                  <p className="p1">
+                                    This initiative is a combination of social
+                                    media, gaming, and the metaverse. It creates
+                                    a room where users with similar interests
+                                    meet and communicate within a social
+                                    media/business virtual environment. Users
+                                    can share ideas within the metaverse.
+                                    Companies can create a virtual environment
+                                    where they manage their team.
+                                  </p>
+                                </div>
+                                <button>Gamification Support</button>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="footer">
-            <div className="container">
-              <div className="col1">
-                <Link to="/" className="brand-wrap">
-                  <img alt="asdfd" className="brand-img" src={logo} />
-                  <span>Vangold</span>
-                </Link>
-                <p className="p1">Copyright © 2021 Vangold Finance.</p>
-                <p className="p2">All rights reserved</p>
-                <div className="socials">
-                  <a
-                    href="https://instagram.com/vangoldfinance?r=nametag"
-                    className="circle"
-                  >
-                    <img alt="asdfd" src={insta} />
-                  </a>
-                  <a href="https://vangold.finance/" className="circle">
-                    <img alt="asdfd" src={basket} />
-                  </a>
-                  <a
-                    href="https://twitter.com/vangoldfinance"
-                    className="circle"
-                  >
-                    <img alt="asdfd" src={twitter} />
-                  </a>
-                  <a
-                    href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
-                    className="circle"
-                  >
-                    <img alt="asdfd" src={youtube} />
-                  </a>
+                <div className="container">
+                  <div className="col1">
+                    <Link to="/" className="brand-wrap">
+                      <img alt="asdfd" className="brand-img" src={logo} />
+                      <span>Vangold</span>
+                    </Link>
+                    <p className="p1">Copyright © 2021 Vangold Finance.</p>
+                    <p className="p2">All rights reserved</p>
+                    <div className="socials">
+                      <a
+                        href="https://instagram.com/vangoldfinance?r=nametag"
+                        className="circle"
+                      >
+                        <img alt="asdfd" src={insta} />
+                      </a>
+                      <a href="https://vangold.finance/" className="circle">
+                        <img alt="asdfd" src={basket} />
+                      </a>
+                      <a
+                        href="https://twitter.com/vangoldfinance"
+                        className="circle"
+                      >
+                        <img alt="asdfd" src={twitter} />
+                      </a>
+                      <a
+                        href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
+                        className="circle"
+                      >
+                        <img alt="asdfd" src={youtube} />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="col2">
+                    <h6>Company</h6>
+                    <Link to="/about">About us</Link>
+                    <a href="https://vangoldfinance.medium.com/">Blog</a>
+                    <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
+                    <Link to="/">Pricing</Link>
+                    <Link to="/">Testimonials</Link>
+                  </div>
+                  <div className="col3">
+                    <h6>Support</h6>
+                    <a href="Mailto:vangoldtoken@vangold.finance">
+                      Help center
+                    </a>
+                    <Link to="/terms">Terms of service</Link>
+                    <Link to="/cookie-policy">Cookie Policy</Link>
+                    <Link to="/privacy-policy">Privacy policy</Link>
+                  </div>
+                  <div className="col4">
+                    <h6>Stay up to date</h6>
+                    <label for="email" className="e-input">
+                      <input
+                        id="email"
+                        type="text"
+                        placeholder="Your email address"
+                      />
+                      <img alt="asdfd" src={send} />
+                    </label>
+                  </div>
                 </div>
               </div>
-              <div className="col2">
-                <h6>Company</h6>
-                <Link to="/about">About us</Link>
-                <a href="https://vangoldfinance.medium.com/">Blog</a>
-                <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
-                <Link to="/">Pricing</Link>
-                <Link to="/">Testimonials</Link>
-              </div>
-              <div className="col3">
-                <h6>Support</h6>
-                <a href="Mailto:vangoldtoken@vangold.finance">Help center</a>
-                <Link to="/terms">Terms of service</Link>
-                <Link to="/cookie-policy">Cookie Policy</Link>
-                <Link to="/privacy-policy">Privacy policy</Link>
-              </div>
-              <div className="col4">
-                <h6>Stay up to date</h6>
-                <label for="email" className="e-input">
-                  <input
-                    id="email"
-                    type="text"
-                    placeholder="Your email address"
-                  />
-                  <img alt="asdfd" src={send} />
-                </label>
-              </div>
-            </div>
-          </div>
             </div>
           )}
         </div>
