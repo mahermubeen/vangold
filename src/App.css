@@ -498,7 +498,7 @@ canvas {
 .terms .footer .container .col1 .p2 {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 .terms .footer .container .col1 .socials {
   display: flex;
@@ -532,16 +532,12 @@ canvas {
   line-height: 30px;
   margin-bottom: 24px;
 }
-.terms .footer .container .col2 {
+.terms .footer .container .col2 .links {
   display: grid;
+  gap: 12px;
+  grid-template-rows: repeat(5, max-content);
 }
-.terms .footer .container .col2 h6 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
-}
-.terms .footer .container .col2 a {
+.terms .footer .container .col2 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -553,10 +549,13 @@ canvas {
 .terms .footer .container .col3 h6 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
 }
-.terms .footer .container .col3 a {
+.terms .footer .container .col3 .links {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  gap: 12px;
+}
+.terms .footer .container .col3 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -682,6 +681,35 @@ canvas {
   z-index: 6;
   position: relative;
 }
+.terms-mobile .footer .container h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.terms-mobile .footer .container .e-input {
+  padding: 9px 12px;
+  width: 255px;
+  display: flex;
+  align-items: center;
+  background-color: #ffc52633;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: text;
+  margin-bottom: 24px;
+}
+.terms-mobile .footer .container .e-input input {
+  width: 100%;
+  background: transparent;
+  color: #ffc526;
+  border: none;
+}
+.terms-mobile .footer .container .e-input input::placeholder {
+  color: #ffc526;
+}
+.terms-mobile .footer .container .e-input img {
+  cursor: pointer;
+}
 .terms-mobile .footer .container .col1 .brand-wrap {
   margin-bottom: 24px;
   display: flex;
@@ -693,9 +721,6 @@ canvas {
   font-weight: 800;
   font-size: 18px;
   color: #ffc526;
-}
-.terms-mobile .footer .container .col1 .e-input {
-  width: 255px;
 }
 .terms-mobile .footer .container .col1 h6 {
   font-weight: 500;
@@ -1505,7 +1530,7 @@ canvas {
 .home .footer .container .col1 .p2 {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 .home .footer .container .col1 .socials {
   display: flex;
@@ -1539,7 +1564,12 @@ canvas {
   line-height: 30px;
   margin-bottom: 24px;
 }
-.home .footer .container .col2 a {
+.home .footer .container .col2 .links {
+  display: grid;
+  gap: 12px;
+  grid-template-rows: repeat(5, max-content);
+}
+.home .footer .container .col2 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1551,10 +1581,13 @@ canvas {
 .home .footer .container .col3 h6 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
 }
-.home .footer .container .col3 a {
+.home .footer .container .col3 .links {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  gap: 12px;
+}
+.home .footer .container .col3 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1980,6 +2013,35 @@ canvas {
   color: white;
   z-index: 6;
   position: relative;
+}
+.home-mobile .footer .container h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.home-mobile .footer .container .e-input {
+  padding: 9px 12px;
+  width: 255px;
+  display: flex;
+  align-items: center;
+  background-color: #ffc52633;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: text;
+  margin-bottom: 24px;
+}
+.home-mobile .footer .container .e-input input {
+  width: 100%;
+  background: transparent;
+  color: #ffc526;
+  border: none;
+}
+.home-mobile .footer .container .e-input input::placeholder {
+  color: #ffc526;
+}
+.home-mobile .footer .container .e-input img {
+  cursor: pointer;
 }
 .home-mobile .footer .container .col1 .brand-wrap {
   margin-bottom: 24px;
@@ -2440,7 +2502,7 @@ canvas {
 .about .footer .container .col1 .p2 {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 .about .footer .container .col1 .socials {
   display: flex;
@@ -2474,16 +2536,12 @@ canvas {
   line-height: 30px;
   margin-bottom: 24px;
 }
-.about .footer .container .col2 {
+.about .footer .container .col2 .links {
   display: grid;
+  gap: 12px;
+  grid-template-rows: repeat(5, max-content);
 }
-.about .footer .container .col2 h6 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
-}
-.about .footer .container .col2 a {
+.about .footer .container .col2 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2495,10 +2553,13 @@ canvas {
 .about .footer .container .col3 h6 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
 }
-.about .footer .container .col3 a {
+.about .footer .container .col3 .links {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  gap: 12px;
+}
+.about .footer .container .col3 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2633,6 +2694,35 @@ canvas {
   color: white;
   z-index: 6;
   position: relative;
+}
+.about-mobile .footer .container h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.about-mobile .footer .container .e-input {
+  padding: 9px 12px;
+  width: 255px;
+  display: flex;
+  align-items: center;
+  background-color: #ffc52633;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: text;
+  margin-bottom: 24px;
+}
+.about-mobile .footer .container .e-input input {
+  width: 100%;
+  background: transparent;
+  color: #ffc526;
+  border: none;
+}
+.about-mobile .footer .container .e-input input::placeholder {
+  color: #ffc526;
+}
+.about-mobile .footer .container .e-input img {
+  cursor: pointer;
 }
 .about-mobile .footer .container .col1 .brand-wrap {
   margin-bottom: 24px;
@@ -3022,7 +3112,7 @@ canvas {
 .cookie .footer .container .col1 .p2 {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 .cookie .footer .container .col1 .socials {
   display: flex;
@@ -3056,16 +3146,12 @@ canvas {
   line-height: 30px;
   margin-bottom: 24px;
 }
-.cookie .footer .container .col2 {
+.cookie .footer .container .col2 .links {
   display: grid;
+  gap: 12px;
+  grid-template-rows: repeat(5, max-content);
 }
-.cookie .footer .container .col2 h6 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
-}
-.cookie .footer .container .col2 a {
+.cookie .footer .container .col2 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -3077,10 +3163,13 @@ canvas {
 .cookie .footer .container .col3 h6 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
 }
-.cookie .footer .container .col3 a {
+.cookie .footer .container .col3 .links {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  gap: 12px;
+}
+.cookie .footer .container .col3 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -3300,6 +3389,35 @@ canvas {
   z-index: 6;
   position: relative;
 }
+.cookie-mobile .footer .container h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.cookie-mobile .footer .container .e-input {
+  padding: 9px 12px;
+  width: 255px;
+  display: flex;
+  align-items: center;
+  background-color: #ffc52633;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: text;
+  margin-bottom: 24px;
+}
+.cookie-mobile .footer .container .e-input input {
+  width: 100%;
+  background: transparent;
+  color: #ffc526;
+  border: none;
+}
+.cookie-mobile .footer .container .e-input input::placeholder {
+  color: #ffc526;
+}
+.cookie-mobile .footer .container .e-input img {
+  cursor: pointer;
+}
 .cookie-mobile .footer .container .col1 .brand-wrap {
   margin-bottom: 24px;
   display: flex;
@@ -3311,9 +3429,6 @@ canvas {
   font-weight: 800;
   font-size: 18px;
   color: #ffc526;
-}
-.cookie-mobile .footer .container .col1 .e-input {
-  width: 255px;
 }
 .cookie-mobile .footer .container .col1 h6 {
   font-weight: 500;
@@ -4032,7 +4147,7 @@ canvas {
 .landing .footer .container .col1 .p2 {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 .landing .footer .container .col1 .socials {
   display: flex;
@@ -4066,16 +4181,12 @@ canvas {
   line-height: 30px;
   margin-bottom: 24px;
 }
-.landing .footer .container .col2 {
+.landing .footer .container .col2 .links {
   display: grid;
+  gap: 12px;
+  grid-template-rows: repeat(5, max-content);
 }
-.landing .footer .container .col2 h6 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
-}
-.landing .footer .container .col2 a {
+.landing .footer .container .col2 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -4087,10 +4198,13 @@ canvas {
 .landing .footer .container .col3 h6 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
 }
-.landing .footer .container .col3 a {
+.landing .footer .container .col3 .links {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  gap: 12px;
+}
+.landing .footer .container .col3 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -4239,6 +4353,35 @@ canvas {
   color: white;
   z-index: 6;
   position: relative;
+}
+.landing-mobile .footer .container h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.landing-mobile .footer .container .e-input {
+  padding: 9px 12px;
+  width: 255px;
+  display: flex;
+  align-items: center;
+  background-color: #ffc52633;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: text;
+  margin-bottom: 24px;
+}
+.landing-mobile .footer .container .e-input input {
+  width: 100%;
+  background: transparent;
+  color: #ffc526;
+  border: none;
+}
+.landing-mobile .footer .container .e-input input::placeholder {
+  color: #ffc526;
+}
+.landing-mobile .footer .container .e-input img {
+  cursor: pointer;
 }
 .landing-mobile .footer .container .col1 .brand-wrap {
   margin-bottom: 24px;
@@ -4615,7 +4758,7 @@ canvas {
 .privacy .footer .container .col1 .p2 {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 .privacy .footer .container .col1 .socials {
   display: flex;
@@ -4649,16 +4792,12 @@ canvas {
   line-height: 30px;
   margin-bottom: 24px;
 }
-.privacy .footer .container .col2 {
+.privacy .footer .container .col2 .links {
   display: grid;
+  gap: 12px;
+  grid-template-rows: repeat(5, max-content);
 }
-.privacy .footer .container .col2 h6 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
-}
-.privacy .footer .container .col2 a {
+.privacy .footer .container .col2 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -4670,10 +4809,13 @@ canvas {
 .privacy .footer .container .col3 h6 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
 }
-.privacy .footer .container .col3 a {
+.privacy .footer .container .col3 .links {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  gap: 12px;
+}
+.privacy .footer .container .col3 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -4894,6 +5036,35 @@ canvas {
   color: white;
   z-index: 6;
   position: relative;
+}
+.privacy-mobile .footer .container h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.privacy-mobile .footer .container .e-input {
+  padding: 9px 12px;
+  width: 255px;
+  display: flex;
+  align-items: center;
+  background-color: #ffc52633;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: text;
+  margin-bottom: 24px;
+}
+.privacy-mobile .footer .container .e-input input {
+  width: 100%;
+  background: transparent;
+  color: #ffc526;
+  border: none;
+}
+.privacy-mobile .footer .container .e-input input::placeholder {
+  color: #ffc526;
+}
+.privacy-mobile .footer .container .e-input img {
+  cursor: pointer;
 }
 .privacy-mobile .footer .container .col1 .brand-wrap {
   margin-bottom: 24px;
@@ -5697,7 +5868,7 @@ canvas {
 .roadmap .footer .container .col1 .p2 {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 .roadmap .footer .container .col1 .socials {
   display: flex;
@@ -5731,16 +5902,12 @@ canvas {
   line-height: 30px;
   margin-bottom: 24px;
 }
-.roadmap .footer .container .col2 {
+.roadmap .footer .container .col2 .links {
   display: grid;
+  gap: 12px;
+  grid-template-rows: repeat(5, max-content);
 }
-.roadmap .footer .container .col2 h6 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
-}
-.roadmap .footer .container .col2 a {
+.roadmap .footer .container .col2 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -5752,10 +5919,13 @@ canvas {
 .roadmap .footer .container .col3 h6 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
 }
-.roadmap .footer .container .col3 a {
+.roadmap .footer .container .col3 .links {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  gap: 12px;
+}
+.roadmap .footer .container .col3 .links a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -6330,6 +6500,35 @@ canvas {
   color: white;
   z-index: 6;
   position: relative;
+}
+.roadmap-mobile .footer .container h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.roadmap-mobile .footer .container .e-input {
+  padding: 9px 12px;
+  width: 255px;
+  display: flex;
+  align-items: center;
+  background-color: #ffc52633;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: text;
+  margin-bottom: 24px;
+}
+.roadmap-mobile .footer .container .e-input input {
+  width: 100%;
+  background: transparent;
+  color: #ffc526;
+  border: none;
+}
+.roadmap-mobile .footer .container .e-input input::placeholder {
+  color: #ffc526;
+}
+.roadmap-mobile .footer .container .e-input img {
+  cursor: pointer;
 }
 .roadmap-mobile .footer .container .col1 .brand-wrap {
   margin-bottom: 24px;

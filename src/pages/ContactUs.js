@@ -6,6 +6,7 @@ import headerLogo from "../img/header-brand-logo.png";
 import cardImg1 from "../img/card-img1.png";
 import cardImg2 from "../img/card-img2.png";
 import cardImg3 from "../img/card-img3.png";
+import linkedIn from "../img/linkedin.png";
 
 import logo from "../img/footer-brand-logo.png";
 import send from "../img/send.png";
@@ -279,6 +280,7 @@ export default class ContactUs extends React.Component {
                   <img alt="asdfd" className="brand-img" src={logo} />
                   <span>Vangold</span>
                 </Link>
+
                 <p className="p1">Copyright © 2021 Vangold Finance.</p>
                 <p className="p2">All rights reserved</p>
                 <div className="socials">
@@ -298,6 +300,12 @@ export default class ContactUs extends React.Component {
                     <img alt="asdfd" src={twitter} />
                   </a>
                   <a
+                    href="https://www.linkedin.com/company/vangold-finance"
+                    className="circle"
+                  >
+                    <img alt="asdfd" src={linkedIn} />
+                  </a>
+                  <a
                     href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
                     className="circle"
                   >
@@ -307,18 +315,22 @@ export default class ContactUs extends React.Component {
               </div>
               <div className="col2">
                 <h6>Company</h6>
-                <Link to="/about">About us</Link>
-                <a href="https://vangoldfinance.medium.com/">Blog</a>
-                <Link to="/contact-us">Contact us</Link>
-                <Link to="/">Pricing</Link>
-                <Link to="/">Testimonials</Link>
+                <div className="links">
+                  <Link to="/about">About us</Link>
+                  <a href="https://vangoldfinance.medium.com/">Blog</a>
+                  <Link to="/contact-us">Contact us</Link>
+                  <Link to="/">Pricing</Link>
+                  <Link to="/">Testimonials</Link>
+                </div>
               </div>
               <div className="col3">
                 <h6>Support</h6>
-                <a href="Mailto:vangoldtoken@vangold.finance">Help center</a>
-                <Link to="/terms">Terms of service</Link>
-                <Link to="/cookie-policy">Cookie Policy</Link>
-                <Link to="/privacy-policy">Privacy policy</Link>
+                <div className="links">
+                  <a href="Mailto:vangoldtoken@vangold.finance">Help center</a>
+                  <Link to="/terms">Terms of service</Link>
+                  <Link to="/cookie-policy">Cookie Policy</Link>
+                  <Link to="/privacy-policy">Privacy policy</Link>
+                </div>
               </div>
               <div className="col4">
                 <h6>Stay up to date</h6>
@@ -469,72 +481,76 @@ export default class ContactUs extends React.Component {
               </div>
 
               <div className="footer">
-                <div className="container">
-                  <div className="col1">
-                    <Link to="/" className="brand-wrap">
-                      <img alt="asdfd" className="brand-img" src={logo} />
-                      <span>Vangold</span>
-                    </Link>
-                    <p className="p1">Copyright © 2021 Vangold Finance.</p>
-                    <p className="p2">All rights reserved</p>
-                    <div className="socials">
-                      <a
-                        href="https://instagram.com/vangoldfinance?r=nametag"
-                        className="circle"
-                      >
-                        <img alt="asdfd" src={insta} />
-                      </a>
-                      <a href="https://vangold.finance/" className="circle">
-                        <img alt="asdfd" src={basket} />
-                      </a>
-                      <a
-                        href="https://twitter.com/vangoldfinance"
-                        className="circle"
-                      >
-                        <img alt="asdfd" src={twitter} />
-                      </a>
-                      <a
-                        href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
-                        className="circle"
-                      >
-                        <img alt="asdfd" src={youtube} />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col2">
-                    <h6>Company</h6>
-                    <div className="links">
-                      <Link to="/about">About us</Link>
-                      <a href="https://vangoldfinance.medium.com/">Blog</a>
-                      <Link to="/contact-us">Contact us</Link>
-                      <Link to="/">Pricing</Link>
-                      <Link to="/">Testimonials</Link>
-                    </div>
-                  </div>
-                  <div className="col3">
-                    <h6>Support</h6>
-                    <div className="links">
-                      <a href="Mailto:vangoldtoken@vangold.finance">
-                        Help center
-                      </a>
-                      <Link to="/terms">Terms of service</Link>
-                      <Link to="/cookie-policy">Cookie Policy</Link>
-                      <Link to="/privacy-policy">Privacy policy</Link>
-                    </div>
-                  </div>
-                  <div className="col4">
-                    <h6>Stay up to date</h6>
-                    <label htmlFor="email" className="e-input">
-                      <input
-                        id="email"
-                        type="text"
-                        placeholder="Your email address"
-                      />
-                      <img alt="asdfd" src={send} />
-                    </label>
-                  </div>
+            <div className="container">
+              <div className="col1">
+                <Link to="/" className="brand-wrap">
+                  <img alt="asdfd" className="brand-img" src={logo} />
+                  <span>Vangold</span>
+                </Link>
+
+                <h6>Stay up to date</h6>
+                <label for="email" className="e-input">
+                  <input
+                    id="email"
+                    type="text"
+                    placeholder="Your email address"
+                  />
+                  <img src={send} />
+                </label>
+
+                <p className="p1">Copyright © 2021 Vangold Finance.</p>
+                <p className="p2">All rights reserved</p>
+                <div className="socials">
+                  <a
+                    href="https://instagram.com/vangoldfinance?r=nametag"
+                    className="circle"
+                  >
+                    <img alt="asdfd" src={insta} />
+                  </a>
+                  <a href="https://vangold.finance/" className="circle">
+                    <img alt="asdfd" src={basket} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/vangold-finance"
+                    className="circle"
+                  >
+                    <img alt="asdfd" src={linkedIn} />
+                  </a>
+                  <a
+                    href="https://twitter.com/vangoldfinance"
+                    className="circle"
+                  >
+                    <img alt="asdfd" src={twitter} />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
+                    className="circle"
+                  >
+                    <img alt="asdfd" src={youtube} />
+                  </a>
                 </div>
               </div>
+              <div className="col2">
+                <h6>Company</h6>
+                <div className="links">
+                  <Link to="/about">About us</Link>
+                  <a href="https://vangoldfinance.medium.com/">Blog</a>
+                  <Link to="/contact-us">Contact us</Link>
+                  <Link to="/">Pricing</Link>
+                  <Link to="/">Testimonials</Link>
+                </div>
+              </div>
+              <div className="col3">
+                <h6>Support</h6>
+                <div className="links">
+                  <a href="Mailto:vangoldtoken@vangold.finance">Help center</a>
+                  <Link to="/terms">Terms of service</Link>
+                  <Link to="/cookie-policy">Cookie Policy</Link>
+                  <Link to="/privacy-policy">Privacy policy</Link>
+                </div>
+              </div>
+            </div>
+          </div>
             </div>
           )}
         </div>

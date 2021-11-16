@@ -8,6 +8,7 @@ import twitter from "../img/twitter.png";
 import insta from "../img/insta.png";
 import youtube from "../img/youtube.png";
 import headerLogo from "../img/header-brand-logo.png";
+import linkedIn from "../img/linkedin.png";
 
 import down from "../img/arrow-down.png";
 import up from "../img/up.png";
@@ -522,6 +523,7 @@ export default class Terms extends React.Component {
                   <img alt="asdfd" className="brand-img" src={logo} />
                   <span>Vangold</span>
                 </Link>
+
                 <p className="p1">Copyright © 2021 Vangold Finance.</p>
                 <p className="p2">All rights reserved</p>
                 <div className="socials">
@@ -541,6 +543,12 @@ export default class Terms extends React.Component {
                     <img alt="asdfd" src={twitter} />
                   </a>
                   <a
+                    href="https://www.linkedin.com/company/vangold-finance"
+                    className="circle"
+                  >
+                    <img alt="asdfd" src={linkedIn} />
+                  </a>
+                  <a
                     href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
                     className="circle"
                   >
@@ -550,18 +558,22 @@ export default class Terms extends React.Component {
               </div>
               <div className="col2">
                 <h6>Company</h6>
-                <Link to="/about">About us</Link>
-                <a href="https://vangoldfinance.medium.com/">Blog</a>
-                <Link to="/contact-us">Contact us</Link>
-                <Link to="/">Pricing</Link>
-                <Link to="/">Testimonials</Link>
+                <div className="links">
+                  <Link to="/about">About us</Link>
+                  <a href="https://vangoldfinance.medium.com/">Blog</a>
+                  <Link to="/contact-us">Contact us</Link>
+                  <Link to="/">Pricing</Link>
+                  <Link to="/">Testimonials</Link>
+                </div>
               </div>
               <div className="col3">
                 <h6>Support</h6>
-                <a href="Mailto:vangoldtoken@vangold.finance">Help center</a>
-                <Link to="/terms">Terms of service</Link>
-                <Link to="/cookie-policy">Cookie Policy</Link>
-                <Link to="/privacy-policy">Privacy policy</Link>
+                <div className="links">
+                  <a href="Mailto:vangoldtoken@vangold.finance">Help center</a>
+                  <Link to="/terms">Terms of service</Link>
+                  <Link to="/cookie-policy">Cookie Policy</Link>
+                  <Link to="/privacy-policy">Privacy policy</Link>
+                </div>
               </div>
               <div className="col4">
                 <h6>Stay up to date</h6>
@@ -1069,6 +1081,17 @@ export default class Terms extends React.Component {
                       <img alt="asdfd" className="brand-img" src={logo} />
                       <span>Vangold</span>
                     </Link>
+
+                    <h6>Stay up to date</h6>
+                    <label for="email" className="e-input">
+                      <input
+                        id="email"
+                        type="text"
+                        placeholder="Your email address"
+                      />
+                      <img src={send} />
+                    </label>
+
                     <p className="p1">Copyright © 2021 Vangold Finance.</p>
                     <p className="p2">All rights reserved</p>
                     <div className="socials">
@@ -1080,6 +1103,12 @@ export default class Terms extends React.Component {
                       </a>
                       <a href="https://vangold.finance/" className="circle">
                         <img alt="asdfd" src={basket} />
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/company/vangold-finance"
+                        className="circle"
+                      >
+                        <img alt="asdfd" src={linkedIn} />
                       </a>
                       <a
                         href="https://twitter.com/vangoldfinance"
@@ -1115,17 +1144,6 @@ export default class Terms extends React.Component {
                       <Link to="/cookie-policy">Cookie Policy</Link>
                       <Link to="/privacy-policy">Privacy policy</Link>
                     </div>
-                  </div>
-                  <div className="col4">
-                    <h6>Stay up to date</h6>
-                    <label htmlFor="email" className="e-input">
-                      <input
-                        id="email"
-                        type="text"
-                        placeholder="Your email address"
-                      />
-                      <img alt="asdfd" src={send} />
-                    </label>
                   </div>
                 </div>
               </div>
