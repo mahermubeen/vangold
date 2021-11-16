@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "react-tsparticles";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import Slider from "./slider";
 
@@ -76,15 +76,20 @@ export default class Home extends React.Component {
 
   community() {
     this.setState({ community: !this.state.community });
-    console.log("asdfasfd");
+    this.setState({ developers: false });
+    this.setState({ individuals: false });
   }
 
   developers() {
     this.setState({ developers: !this.state.developers });
+    this.setState({ community: false });
+    this.setState({ individuals: false });
   }
 
   individuals() {
     this.setState({ individuals: !this.state.individuals });
+    this.setState({ developers: false });
+    this.setState({ community: false });
   }
 
   render() {

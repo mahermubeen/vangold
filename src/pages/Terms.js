@@ -53,15 +53,20 @@ export default class Terms extends React.Component {
 
   community() {
     this.setState({ community: !this.state.community });
-    console.log("asdfasfd");
+    this.setState({ developers: false });
+    this.setState({ individuals: false });
   }
 
   developers() {
     this.setState({ developers: !this.state.developers });
+    this.setState({ community: false });
+    this.setState({ individuals: false });
   }
 
   individuals() {
     this.setState({ individuals: !this.state.individuals });
+    this.setState({ developers: false });
+    this.setState({ community: false });
   }
 
   render() {

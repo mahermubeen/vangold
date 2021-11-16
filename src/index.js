@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router } from "react-router-dom";
+import { Router, BrowserRouter } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 //css
@@ -17,11 +17,11 @@ const history = createBrowserHistory();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router history={history}>
-      <Provider store={store}>
+    <Provider store={store}>
+      <BrowserRouter history={history}>
         <App />
-      </Provider>
-    </Router>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );

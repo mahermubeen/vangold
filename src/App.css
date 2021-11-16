@@ -972,7 +972,7 @@ canvas {
 .home .header {
   background: #0b0d17;
   box-shadow: 0px 1px 0px #e5e9f2;
-  z-index: 6;
+  z-index: 10;
   position: relative;
 }
 .home .header .container {
