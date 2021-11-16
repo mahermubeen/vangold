@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "react-tsparticles";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 import Slider from "./slider";
 
