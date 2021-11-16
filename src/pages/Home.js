@@ -96,7 +96,20 @@ export default class Home extends React.Component {
       console.log(container);
     };
 
-    const images = [card1, card2, card3];
+    const images = [
+      {
+        img: card1,
+        goo: "https://vangoldfinance.medium.com/titans-ventures-is-excited-to-host-the-next-ama-with-vangold-finance-b48c8828c119",
+      },
+      {
+        img: card2,
+        goo: "https://vangoldfinance.medium.com/vangold-v2-official-airdrop-live-aec9f33f914d",
+      },
+      {
+        img: card3,
+        goo: "https://vangoldfinance.medium.com/dva-will-host-ama-vangold-in-room-d-va-community-26-september-2pm-utc-50-for-top-10-314783716e1a",
+      },
+    ];
 
     return (
       <>
@@ -436,16 +449,17 @@ export default class Home extends React.Component {
                     }}
                   >
                     {images.map((image, index) => (
-                      <div
+                      <a
                         className="carousel-cell"
                         style={{
                           width: "39%",
                           height: "186px",
                         }}
                         key={index}
+                        href={image.goo}
                       >
-                        <img src={image} alt="" />
-                      </div>
+                        <img src={image.img} alt="" />
+                      </a>
                     ))}
                   </Slider>
                 </div>
@@ -530,6 +544,101 @@ export default class Home extends React.Component {
         </div>
 
         <div className="home-mobile">
+          {this.state.menu && (
+            <div>
+              <div className="header">
+                <div className="container">
+                  <Link to="/" className="l-div">
+                    <img alt="asdfd" src={headerLogo} />
+                    <span>Vangold</span>
+                  </Link>
+                  <div className="r-div">
+                    <a href="https://t.me/vangoldtoken1" className="join-btn">
+                      Join the Network
+                    </a>
+                    <img alt="menu-off" onClick={this.menu} src={menuIcon} />
+                  </div>
+                </div>
+              </div>
+              <div className="menu">
+                <div className="menu-wrap">
+                  <Link className="a1" to="/about">
+                    About
+                  </Link>
+                  <div onClick={() => this.subMenu1()} className="menu-head">
+                    {" "}
+                    <p>Community</p>
+                    {this.state.subMenu1 === true ? (
+                      <img alt="asdfd" src={up} />
+                    ) : (
+                      <img alt="asdfd" src={down} />
+                    )}
+                  </div>
+                  {this.state.subMenu1 === true ? (
+                    <div className="menu-items">
+                      <a href="https://t.me/vangoldtoken1">Telegram</a>
+                      <a href="https://twitter.com/vangoldfinance">Twitter</a>
+                      <a href="https://www.reddit.com/user/vangoldtoken">
+                        Reddit
+                      </a>
+                      <a href="https://discord.gg/s3vVfBEFrc">Discord</a>
+                      <a href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw">
+                        Youtube
+                      </a>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+
+                  <div onClick={() => this.subMenu2()} className="menu-head">
+                    <p>Documentation</p>
+                    {this.state.subMenu2 === true ? (
+                      <img alt="asdfd" src={up} />
+                    ) : (
+                      <img alt="asdfd" src={down} />
+                    )}
+                  </div>
+                  {this.state.subMenu2 === true ? (
+                    <div className="menu-items doc-menu">
+                      <a href="https://drive.google.com/file/d/1RnIm59CoclsjOOtYGOBii8aZ_2TL3w_x/view?usp=drivesdk">
+                        Whitepaper
+                      </a>
+                      <Link to="/roadmap">Roadmap</Link>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                  <div onClick={() => this.subMenu3()} className="menu-head">
+                    <p>Markets</p>
+                    {this.state.subMenu3 === true ? (
+                      <img alt="asdfd" src={up} />
+                    ) : (
+                      <img alt="asdfd" src={down} />
+                    )}
+                  </div>
+                  {this.state.subMenu3 === true ? (
+                    <div className="menu-items">
+                      <a href="https://vangoldswap.finance/">Stake & Farm</a>
+                      <a href="https://pancakeswap.finance/swap?outputCurrency=0x487ecd4cFa635D1a9409E86Cd22d33d5abEb7b44">
+                        Buy VGD
+                      </a>
+                      {/* <Link to="/terms">Terms</Link>
+                    <Link to="/cookie-policy">Cookie Policy</Link>
+                    <Link to="/landing-page">Landing Page</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link> */}
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                  <a className="a1" href="mailto:vangoldtoken@vangold.finance">
+                    Contact{" "}
+                  </a>
+                  <button>Create Account</button>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="header">
             <div className="container">
               <Link to="/" className="l-div">
@@ -545,373 +654,287 @@ export default class Home extends React.Component {
             </div>
           </div>
 
-          {this.state.menu === true ? (
-            <div className="menu">
-              <div className="menu-wrap">
-                <Link className="a1" to="/about">
-                  About
-                </Link>
-                <div onClick={() => this.subMenu1()} className="menu-head">
-                  {" "}
-                  <p>Community</p>
-                  {this.state.subMenu1 === true ? (
-                    <img alt="asdfd" src={up} />
-                  ) : (
-                    <img alt="asdfd" src={down} />
-                  )}
+          <div className="main-content">
+            <div className="container">
+              <div className="sec1">
+                <div className="l-sec">
+                  <h2>Making Payment Easier for Everyone</h2>
+                  <p>
+                    Vangold is a blockchain-platform solution for freelancers
+                    and creators worldwide, decentralizing payments and making
+                    them easier and better through smart contracts.
+                  </p>
+                  <a href="https://t.me/vangoldtoken1" className="join-btn">
+                    Join the Network
+                  </a>
                 </div>
-                {this.state.subMenu1 === true ? (
-                  <div className="menu-items">
-                    <a href="https://t.me/vangoldtoken1">Telegram</a>
-                    <a href="https://twitter.com/vangoldfinance">Twitter</a>
-                    <a href="https://www.reddit.com/user/vangoldtoken">
-                      Reddit
-                    </a>
-                    <a href="https://discord.gg/s3vVfBEFrc">Discord</a>
-                    <a href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw">
-                      Youtube
-                    </a>
-                  </div>
-                ) : (
-                  ""
-                )}
-
-                <div onClick={() => this.subMenu2()} className="menu-head">
-                  <p>Documentation</p>
-                  {this.state.subMenu2 === true ? (
-                    <img alt="asdfd" src={up} />
-                  ) : (
-                    <img alt="asdfd" src={down} />
-                  )}
-                </div>
-                {this.state.subMenu2 === true ? (
-                  <div className="menu-items doc-menu">
-                    <a href="https://drive.google.com/file/d/1RnIm59CoclsjOOtYGOBii8aZ_2TL3w_x/view?usp=drivesdk">
-                      Whitepaper
-                    </a>
-                    <Link to="/roadmap">Roadmap</Link>
-                  </div>
-                ) : (
-                  ""
-                )}
-                <div onClick={() => this.subMenu3()} className="menu-head">
-                  <p>Markets</p>
-                  {this.state.subMenu3 === true ? (
-                    <img alt="asdfd" src={up} />
-                  ) : (
-                    <img alt="asdfd" src={down} />
-                  )}
-                </div>
-                {this.state.subMenu3 === true ? (
-                  <div className="menu-items">
-                    <a href="https://vangoldswap.finance/">Stake & Farm</a>
-                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x487ecd4cFa635D1a9409E86Cd22d33d5abEb7b44">
-                      Buy VGD
-                    </a>
-                    {/* <Link to="/terms">Terms</Link>
-                    <Link to="/cookie-policy">Cookie Policy</Link>
-                    <Link to="/landing-page">Landing Page</Link>
-                    <Link to="/privacy-policy">Privacy Policy</Link> */}
-                  </div>
-                ) : (
-                  ""
-                )}
-                <a className="a1" href="mailto:vangoldtoken@vangold.finance">
-                  Contact{" "}
-                </a>
-                <button>Create Account</button>
               </div>
-            </div>
-          ) : (
-            <div>
-              <div className="main-content">
-                <div className="container">
-                  <div className="sec1">
-                    <div className="l-sec">
-                      <h2>Making Payment Easier for Everyone</h2>
-                      <p>
-                        Vangold is a blockchain-platform solution for
-                        freelancers and creators worldwide, decentralizing
-                        payments and making them easier and better through smart
-                        contracts.
-                      </p>
-                      <a href="https://t.me/vangoldtoken1" className="join-btn">
-                        Join the Network
-                      </a>
-                    </div>
-                  </div>
 
-                  <div className="sec2">
-                    <div className="contain1">
-                      <div className="top-div">
-                        <div className="left-box">
-                          <div className="up-d">
-                            <div className="brand-wrap">
-                              <figure>
-                                <img alt="asdfd" src={newImg1} />
-                              </figure>
-                              <span>Vangold</span>
-                            </div>
-                            <img alt="asdfd" src={chart} />
-                          </div>
-                          <div className="down-d">
-                            <span className="span1">$0.001402</span>
-                            <div className="text-wrap">
-                              <img alt="asdfd" src={greenUp} />
-                              <span>3.87%</span>
-                            </div>
-                          </div>
+              <div className="sec2">
+                <div className="contain1">
+                  <div className="top-div">
+                    <div className="left-box">
+                      <div className="up-d">
+                        <div className="brand-wrap">
+                          <figure>
+                            <img alt="asdfd" src={newImg1} />
+                          </figure>
+                          <span>Vangold</span>
                         </div>
-                        <div className="right-box">
-                          <div className="up-d">
-                            <div className="brand-wrap">
-                              <figure>
-                                <img alt="asdfd" src={newImg} />
-                              </figure>
-                              <span>Vangoldswap</span>
-                            </div>
-                            <img alt="asdfd" src={chart} />
-                          </div>
-                          <div className="down-d">
-                            <span className="span1">$0.001402</span>
-                            <div className="text-wrap">
-                              <img alt="asdfd" src={greenUp} />
-                              <span>3.87%</span>
-                            </div>
-                          </div>
+                        <img alt="asdfd" src={chart} />
+                      </div>
+                      <div className="down-d">
+                        <span className="span1">$0.001402</span>
+                        <div className="text-wrap">
+                          <img alt="asdfd" src={greenUp} />
+                          <span>3.87%</span>
                         </div>
                       </div>
-                      <div className="bottom-div">
-                        <h2>
-                          Trusted by our beloved
-                          <br />
-                          partners
-                        </h2>
-                        <div className="lower-d">
-                          <div className="bin-wrap">
-                            <img alt="asdfd" src={binance} />
-                            <span>Binance</span>
-                          </div>
+                    </div>
+                    <div className="right-box">
+                      <div className="up-d">
+                        <div className="brand-wrap">
+                          <figure>
+                            <img alt="asdfd" src={newImg} />
+                          </figure>
+                          <span>Vangoldswap</span>
+                        </div>
+                        <img alt="asdfd" src={chart} />
+                      </div>
+                      <div className="down-d">
+                        <span className="span1">$0.001402</span>
+                        <div className="text-wrap">
+                          <img alt="asdfd" src={greenUp} />
+                          <span>3.87%</span>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <div className="sec3">
-                    <div className="r-div">
-                      <h2>
-                        What is <span>Vangold Finance</span>?
-                      </h2>
-                      <p>
-                        Vangold Finance is an ecosystem powering one of the
-                        world’s first Freelance Services built on the Binance
-                        Smart Chain (BSC) network.
-                      </p>
-                    </div>
-
-                    <div className="left-fig">
-                      <img alt="asdfd" src={sec3Bg} />
-                    </div>
-                  </div>
-
-                  <div className="sec4">
-                    <div className="r-div">
-                      <h2>
-                        A New Era for <span>Payment</span>
-                      </h2>
-                      <p>
-                        Today, millions of freelancers and creatives are finding
-                        it difficult to get paid all over the world. Vangold
-                        decentralized finance (DeFi) makes that possible now.
-                        You can pay creatives or get paid as a creative,
-                        designer or a software developer.
-                      </p>
-                    </div>
-
-                    <div className="left-fig">
-                      <img alt="asdfd" src={sec4Bg} />
-                    </div>
-                  </div>
-
-                  <div className="sec5">
+                  <div className="bottom-div">
                     <h2>
-                      Powering the Vangold
+                      Trusted by our beloved
                       <br />
-                      Network
+                      partners
                     </h2>
-                    <div className="boxes">
-                      <div className="box">
-                        <figure>
-                          <img alt="asdfd" src={icon1} />
-                        </figure>
-                        <h4>Vangold Freelance</h4>
-                        <p>
-                          Create and fulfill professional job postings and
-                          orders instantly on the Vangold Freelance Service.
-                        </p>
-                      </div>
-                      <div className="box">
-                        <figure>
-                          <img alt="asdfd" src={icon2} />
-                        </figure>
-                        <h4>Vangold Pay</h4>
-                        <p>
-                          A fully decentralized payment service powered by smart
-                          contracts. Send and recieve payments instantly.
-                        </p>
-                      </div>
-                      <div className="box">
-                        <figure>
-                          <img alt="asdfd" src={icon3} />
-                        </figure>
-                        <h4>Vangold NFT</h4>
-                        <p>
-                          A marketplace for digital curating arts and
-                          collectibles. Powered by the Binance Smart Chain (BSC)
-                          network.
-                        </p>
-                      </div>
-                      <div className="box">
-                        <figure>
-                          <img alt="asdfd" src={icon4} />
-                        </figure>
-                        <h4>Vangold Mart</h4>
-                        <p>
-                          An online eCommerce marketplace for buying and selling
-                          products and services. Get the best deals.
-                        </p>
-                      </div>
-                      <div className="box">
-                        <figure>
-                          <img alt="asdfd" src={icon5} />
-                        </figure>
-                        <h4>Vangold Metaverse</h4>
-                        <p>
-                          Explore the world of enhanced AR/VR technologies in
-                          the Vangold Metaverse.
-                        </p>
-                      </div>
-                      <div className="box">
-                        <figure>
-                          <img alt="asdfd" src={icon6} />
-                        </figure>
-                        <h4>Vangold Web3.0</h4>
-                        <p>
-                          The future of the internet is nearer than ever.
-                          Vangold Web 3.0 will power a decentralized internet.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="sec6">
-                    <h2>Keep Up With Our Latest Events</h2>
-
-                    <div className="carousall-wrap">
-                      <Slider
-                        options={{
-                          autoPlay: 4000,
-                          pauseAutoPlayOnHover: true,
-                          wrapAround: true,
-                        }}
-                      >
-                        {images.map((image, index) => (
-                          <div
-                            className="carousel-cell"
-                            style={{
-                              width: "52%",
-                            }}
-                            key={index}
-                          >
-                            <img src={image} alt="" />
-                          </div>
-                        ))}
-                      </Slider>
-                    </div>
-                  </div>
-
-                  <div className="sec7">
-                    <div className="contain">
-                      <div className="left-d">
-                        <h3>Become a member of this growing communtity</h3>
-                        <a href="https://t.me/vangoldtoken1">
-                          Join the community
-                        </a>
+                    <div className="lower-d">
+                      <div className="bin-wrap">
+                        <img alt="asdfd" src={binance} />
+                        <span>Binance</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="footer">
-                <div className="container">
-                  <div className="col1">
-                    <Link to="/" className="brand-wrap">
-                      <img alt="asdfd" className="brand-img" src={logo} />
-                      <span>Vangold</span>
-                    </Link>
-                    <p className="p1">Copyright © 2021 Vangold Finance.</p>
-                    <p className="p2">All rights reserved</p>
-                    <div className="socials">
-                      <a
-                        href="https://instagram.com/vangoldfinance?r=nametag"
-                        className="circle"
-                      >
-                        <img alt="asdfd" src={insta} />
-                      </a>
-                      <a href="https://vangold.finance/" className="circle">
-                        <img alt="asdfd" src={basket} />
-                      </a>
-                      <a
-                        href="https://twitter.com/vangoldfinance"
-                        className="circle"
-                      >
-                        <img alt="asdfd" src={twitter} />
-                      </a>
-                      <a
-                        href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
-                        className="circle"
-                      >
-                        <img alt="asdfd" src={youtube} />
-                      </a>
-                    </div>
+              <div className="sec3">
+                <div className="r-div">
+                  <h2>
+                    What is <span>Vangold Finance</span>?
+                  </h2>
+                  <p>
+                    Vangold Finance is an ecosystem powering one of the world’s
+                    first Freelance Services built on the Binance Smart Chain
+                    (BSC) network.
+                  </p>
+                </div>
+
+                <div className="left-fig">
+                  <img alt="asdfd" src={sec3Bg} />
+                </div>
+              </div>
+
+              <div className="sec4">
+                <div className="r-div">
+                  <h2>
+                    A New Era for <span>Payment</span>
+                  </h2>
+                  <p>
+                    Today, millions of freelancers and creatives are finding it
+                    difficult to get paid all over the world. Vangold
+                    decentralized finance (DeFi) makes that possible now. You
+                    can pay creatives or get paid as a creative, designer or a
+                    software developer.
+                  </p>
+                </div>
+
+                <div className="left-fig">
+                  <img alt="asdfd" src={sec4Bg} />
+                </div>
+              </div>
+
+              <div className="sec5">
+                <h2>
+                  Powering the Vangold
+                  <br />
+                  Network
+                </h2>
+                <div className="boxes">
+                  <div className="box">
+                    <figure>
+                      <img alt="asdfd" src={icon1} />
+                    </figure>
+                    <h4>Vangold Freelance</h4>
+                    <p>
+                      Create and fulfill professional job postings and orders
+                      instantly on the Vangold Freelance Service.
+                    </p>
                   </div>
-                  <div className="col2">
-                    <h6>Company</h6>
-                    <div className="links">
-                      <Link to="/about">About us</Link>
-                      <a href="https://vangoldfinance.medium.com/">Blog</a>
-                      <Link to="/contact-us">Contact us</Link>
-                      <Link to="/">Pricing</Link>
-                      <Link to="/">Testimonials</Link>
-                    </div>
+                  <div className="box">
+                    <figure>
+                      <img alt="asdfd" src={icon2} />
+                    </figure>
+                    <h4>Vangold Pay</h4>
+                    <p>
+                      A fully decentralized payment service powered by smart
+                      contracts. Send and recieve payments instantly.
+                    </p>
                   </div>
-                  <div className="col3">
-                    <h6>Support</h6>
-                    <div className="links">
-                      <a href="Mailto:vangoldtoken@vangold.finance">
-                        Help center
+                  <div className="box">
+                    <figure>
+                      <img alt="asdfd" src={icon3} />
+                    </figure>
+                    <h4>Vangold NFT</h4>
+                    <p>
+                      A marketplace for digital curating arts and collectibles.
+                      Powered by the Binance Smart Chain (BSC) network.
+                    </p>
+                  </div>
+                  <div className="box">
+                    <figure>
+                      <img alt="asdfd" src={icon4} />
+                    </figure>
+                    <h4>Vangold Mart</h4>
+                    <p>
+                      An online eCommerce marketplace for buying and selling
+                      products and services. Get the best deals.
+                    </p>
+                  </div>
+                  <div className="box">
+                    <figure>
+                      <img alt="asdfd" src={icon5} />
+                    </figure>
+                    <h4>Vangold Metaverse</h4>
+                    <p>
+                      Explore the world of enhanced AR/VR technologies in the
+                      Vangold Metaverse.
+                    </p>
+                  </div>
+                  <div className="box">
+                    <figure>
+                      <img alt="asdfd" src={icon6} />
+                    </figure>
+                    <h4>Vangold Web3.0</h4>
+                    <p>
+                      The future of the internet is nearer than ever. Vangold
+                      Web 3.0 will power a decentralized internet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="sec6">
+                <h2>Keep Up With Our Latest Events</h2>
+
+                <div className="carousall-wrap">
+                  <Slider
+                    options={{
+                      autoPlay: 4000,
+                      pauseAutoPlayOnHover: true,
+                      wrapAround: true,
+                    }}
+                  >
+                    {images.map((image, index) => (
+                      <a
+                        className="carousel-cell"
+                        style={{
+                          width: "52%",
+                        }}
+                        key={index}
+                        href={image.goo}
+                      >
+                        <img src={image.img} alt="" />
                       </a>
-                      <Link to="/terms">Terms of service</Link>
-                      <Link to="/cookie-policy">Cookie Policy</Link>
-                      <Link to="/privacy-policy">Privacy policy</Link>
-                    </div>
-                  </div>
-                  <div className="col4">
-                    <h6>Stay up to date</h6>
-                    <label htmlFor="email" className="e-input">
-                      <input
-                        id="email"
-                        type="text"
-                        placeholder="Your email address"
-                      />
-                      <img alt="asdfd" src={send} />
-                    </label>
+                    ))}
+                  </Slider>
+                </div>
+              </div>
+
+              <div className="sec7">
+                <div className="contain">
+                  <div className="left-d">
+                    <h3>Become a member of this growing communtity</h3>
+                    <a href="https://t.me/vangoldtoken1">Join the community</a>
                   </div>
                 </div>
               </div>
             </div>
-          )}
+          </div>
+
+          <div className="footer">
+            <div className="container">
+              <div className="col1">
+                <Link to="/" className="brand-wrap">
+                  <img alt="asdfd" className="brand-img" src={logo} />
+                  <span>Vangold</span>
+                </Link>
+                <p className="p1">Copyright © 2021 Vangold Finance.</p>
+                <p className="p2">All rights reserved</p>
+                <div className="socials">
+                  <a
+                    href="https://instagram.com/vangoldfinance?r=nametag"
+                    className="circle"
+                  >
+                    <img alt="asdfd" src={insta} />
+                  </a>
+                  <a href="https://vangold.finance/" className="circle">
+                    <img alt="asdfd" src={basket} />
+                  </a>
+                  <a
+                    href="https://twitter.com/vangoldfinance"
+                    className="circle"
+                  >
+                    <img alt="asdfd" src={twitter} />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
+                    className="circle"
+                  >
+                    <img alt="asdfd" src={youtube} />
+                  </a>
+                </div>
+              </div>
+              <div className="col2">
+                <h6>Company</h6>
+                <div className="links">
+                  <Link to="/about">About us</Link>
+                  <a href="https://vangoldfinance.medium.com/">Blog</a>
+                  <Link to="/contact-us">Contact us</Link>
+                  <Link to="/">Pricing</Link>
+                  <Link to="/">Testimonials</Link>
+                </div>
+              </div>
+              <div className="col3">
+                <h6>Support</h6>
+                <div className="links">
+                  <a href="Mailto:vangoldtoken@vangold.finance">Help center</a>
+                  <Link to="/terms">Terms of service</Link>
+                  <Link to="/cookie-policy">Cookie Policy</Link>
+                  <Link to="/privacy-policy">Privacy policy</Link>
+                </div>
+              </div>
+              <div className="col4">
+                <h6>Stay up to date</h6>
+                <label htmlFor="email" className="e-input">
+                  <input
+                    id="email"
+                    type="text"
+                    placeholder="Your email address"
+                  />
+                  <img alt="asdfd" src={send} />
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </>
     );
