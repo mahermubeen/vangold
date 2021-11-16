@@ -7,7 +7,7 @@ import TermsPage from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import CookiePolicy from "./pages/CookiePolicy";
-import LandingPage from "./pages/LandingPage";
+import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Roadmap from "./pages/Roadmap";
 
@@ -20,7 +20,7 @@ class Routes extends Component {
         <Route path="/terms" exact component={TermsPage} />
         <Route path="/about" exact component={About} />
         <Route path="/cookie-policy" exact component={CookiePolicy} />
-        <Route path="/landing-page" exact component={LandingPage} />
+        <Route path="/contact-us" exact component={ContactUs} />
         <Route path="/privacy-policy" exact component={PrivacyPolicy} />
         <Route path="/roadmap" exact component={Roadmap} />
 

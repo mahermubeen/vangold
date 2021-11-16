@@ -2,6 +2,8 @@ import React from "react";
 import Particles from "react-tsparticles";
 import { Link } from "react-router-dom";
 
+import Slider from "./slider";
+
 import headerLogo from "../img/header-brand-logo.png";
 import sec1Bg from "../img/bg3.png";
 import chart from "../img/Chart.png";
@@ -46,7 +48,7 @@ export default class Home extends React.Component {
       developers: false,
       individuals: false,
     };
-    this.handleMenu = this.handleMenu.bind(this);
+    this.menu = this.menu.bind(this);
     this.subMenu1 = this.subMenu1.bind(this);
     this.subMenu2 = this.subMenu2.bind(this);
     this.subMenu3 = this.subMenu3.bind(this);
@@ -55,7 +57,7 @@ export default class Home extends React.Component {
     this.individuals = this.individuals.bind(this);
   }
 
-  handleMenu() {
+  menu() {
     this.setState({ menu: !this.state.menu });
     console.log("menu-cliccked");
   }
@@ -94,8 +96,10 @@ export default class Home extends React.Component {
       console.log(container);
     };
 
+    const images = [card1, card2, card3];
+
     return (
-      <div>
+      <>
         <div className="home">
           <div className="header">
             <div className="container">
@@ -424,53 +428,26 @@ export default class Home extends React.Component {
                 <h2>Keep Up With Our Latest Events</h2>
 
                 <div className="carousall-wrap">
-                  <div class="carousel" data-flickity='{ "wrapAround": true }'>
-                    <div class="carousel-cell">
-                      <a href="https://vangoldfinance.medium.com/titans-ventures-is-excited-to-host-the-next-ama-with-vangold-finance-b48c8828c119">
-                        <img alt="asdfd" src={card1} />
-                      </a>
-                    </div>
-                    <div class="carousel-cell">
-                      <a href="https://vangoldfinance.medium.com/vangold-v2-official-airdrop-live-aec9f33f914d">
-                        <img alt="asdfd" src={card2} />
-                      </a>
-                    </div>
-                    <div class="carousel-cell">
-                      <a href="https://vangoldfinance.medium.com/dva-will-host-ama-vangold-in-room-d-va-community-26-september-2pm-utc-50-for-top-10-314783716e1a">
-                        <img alt="asdfd" src={card3} />
-                      </a>
-                    </div>
-                    <div class="carousel-cell">
-                      <a href="https://vangoldfinance.medium.com/titans-ventures-is-excited-to-host-the-next-ama-with-vangold-finance-b48c8828c119">
-                        <img alt="asdfd" src={card1} />
-                      </a>
-                    </div>
-                    <div class="carousel-cell">
-                      <a href="https://vangoldfinance.medium.com/dva-will-host-ama-vangold-in-room-d-va-community-26-september-2pm-utc-50-for-top-10-314783716e1a">
-                        <img alt="asdfd" src={card3} />
-                      </a>
-                    </div>
-                    <div class="carousel-cell">
-                      <a href="https://vangoldfinance.medium.com/vangold-v2-official-airdrop-live-aec9f33f914d">
-                        <img alt="asdfd" src={card2} />
-                      </a>
-                    </div>
-                    <div class="carousel-cell">
-                      <a href="https://vangoldfinance.medium.com/titans-ventures-is-excited-to-host-the-next-ama-with-vangold-finance-b48c8828c119">
-                        <img alt="asdfd" src={card1} />
-                      </a>
-                    </div>
-                    <div class="carousel-cell">
-                      <a href="https://vangoldfinance.medium.com/dva-will-host-ama-vangold-in-room-d-va-community-26-september-2pm-utc-50-for-top-10-314783716e1a">
-                        <img alt="asdfd" src={card3} />
-                      </a>
-                    </div>
-                    <div class="carousel-cell">
-                      <a href="https://vangoldfinance.medium.com/vangold-v2-official-airdrop-live-aec9f33f914d">
-                        <img alt="asdfd" src={card2} />
-                      </a>
-                    </div>
-                  </div>
+                  <Slider
+                    options={{
+                      autoPlay: 4000,
+                      pauseAutoPlayOnHover: true,
+                      wrapAround: true,
+                    }}
+                  >
+                    {images.map((image, index) => (
+                      <div
+                        className="carousel-cell"
+                        style={{
+                          width: "39%",
+                          height: "186px",
+                        }}
+                        key={index}
+                      >
+                        <img src={image} alt="" />
+                      </div>
+                    ))}
+                  </Slider>
                 </div>
               </div>
 
@@ -526,7 +503,7 @@ export default class Home extends React.Component {
                 <h6>Company</h6>
                 <Link to="/about">About us</Link>
                 <a href="https://vangoldfinance.medium.com/">Blog</a>
-                <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
+                <Link to="/contact-us">Contact us</Link>
                 <Link to="/">Pricing</Link>
                 <Link to="/">Testimonials</Link>
               </div>
@@ -539,7 +516,7 @@ export default class Home extends React.Component {
               </div>
               <div className="col4">
                 <h6>Stay up to date</h6>
-                <label for="email" className="e-input">
+                <label htmlFor="email" className="e-input">
                   <input
                     id="email"
                     type="text"
@@ -563,7 +540,7 @@ export default class Home extends React.Component {
                 <a href="https://t.me/vangoldtoken1" className="join-btn">
                   Join the Network
                 </a>
-                <img alt="asdfd" onClick={this.handleMenu} src={menuIcon} />
+                <img alt="menu-off" onClick={this.menu} src={menuIcon} />
               </div>
             </div>
           </div>
@@ -831,38 +808,25 @@ export default class Home extends React.Component {
                     <h2>Keep Up With Our Latest Events</h2>
 
                     <div className="carousall-wrap">
-                      <div
-                        class="carousel"
-                        data-flickity='{ "wrapAround": true }'
+                      <Slider
+                        options={{
+                          autoPlay: 4000,
+                          pauseAutoPlayOnHover: true,
+                          wrapAround: true,
+                        }}
                       >
-                        <div class="carousel-cell">
-                          <img alt="asdfd" src={card1} />
-                        </div>
-                        <div class="carousel-cell">
-                          <img alt="asdfd" src={card2} />
-                        </div>
-                        <div class="carousel-cell">
-                          <img alt="asdfd" src={card3} />
-                        </div>
-                        <div class="carousel-cell">
-                          <img alt="asdfd" src={card1} />
-                        </div>
-                        <div class="carousel-cell">
-                          <img alt="asdfd" src={card3} />
-                        </div>
-                        <div class="carousel-cell">
-                          <img alt="asdfd" src={card2} />
-                        </div>
-                        <div class="carousel-cell">
-                          <img alt="asdfd" src={card1} />
-                        </div>
-                        <div class="carousel-cell">
-                          <img alt="asdfd" src={card3} />
-                        </div>
-                        <div class="carousel-cell">
-                          <img alt="asdfd" src={card2} />
-                        </div>
-                      </div>
+                        {images.map((image, index) => (
+                          <div
+                            className="carousel-cell"
+                            style={{
+                              width: "52%",
+                            }}
+                            key={index}
+                          >
+                            <img src={image} alt="" />
+                          </div>
+                        ))}
+                      </Slider>
                     </div>
                   </div>
 
@@ -914,24 +878,28 @@ export default class Home extends React.Component {
                   </div>
                   <div className="col2">
                     <h6>Company</h6>
-                    <Link to="/about">About us</Link>
-                    <a href="https://vangoldfinance.medium.com/">Blog</a>
-                    <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
-                    <Link to="/">Pricing</Link>
-                    <Link to="/">Testimonials</Link>
+                    <div className="links">
+                      <Link to="/about">About us</Link>
+                      <a href="https://vangoldfinance.medium.com/">Blog</a>
+                      <Link to="/contact-us">Contact us</Link>
+                      <Link to="/">Pricing</Link>
+                      <Link to="/">Testimonials</Link>
+                    </div>
                   </div>
                   <div className="col3">
                     <h6>Support</h6>
-                    <a href="Mailto:vangoldtoken@vangold.finance">
-                      Help center
-                    </a>
-                    <Link to="/terms">Terms of service</Link>
-                    <Link to="/cookie-policy">Cookie Policy</Link>
-                    <Link to="/privacy-policy">Privacy policy</Link>
+                    <div className="links">
+                      <a href="Mailto:vangoldtoken@vangold.finance">
+                        Help center
+                      </a>
+                      <Link to="/terms">Terms of service</Link>
+                      <Link to="/cookie-policy">Cookie Policy</Link>
+                      <Link to="/privacy-policy">Privacy policy</Link>
+                    </div>
                   </div>
                   <div className="col4">
                     <h6>Stay up to date</h6>
-                    <label for="email" className="e-input">
+                    <label htmlFor="email" className="e-input">
                       <input
                         id="email"
                         type="text"
@@ -945,7 +913,7 @@ export default class Home extends React.Component {
             </div>
           )}
         </div>
-      </div>
+      </>
     );
   }
 }

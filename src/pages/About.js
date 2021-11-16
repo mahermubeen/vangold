@@ -94,7 +94,9 @@ export default class About extends React.Component {
                   </span>
                   {this.state.community ? (
                     <div className="link-menu">
-                      <a href="https://drive.google.com/file/d/1RnIm59CoclsjOOtYGOBii8aZ_2TL3w_x/view?usp=drivesdk">Whitepaper</a>
+                      <a href="https://drive.google.com/file/d/1RnIm59CoclsjOOtYGOBii8aZ_2TL3w_x/view?usp=drivesdk">
+                        Whitepaper
+                      </a>
                       <Link to="/roadmap">Roadmap</Link>
                     </div>
                   ) : (
@@ -103,16 +105,20 @@ export default class About extends React.Component {
                 </div>
                 <div className="link-wrap doc-menu">
                   <span onClick={this.developers} className="a1">
-                  Documentation
+                    Documentation
                   </span>
 
                   {this.state.developers ? (
                     <div className="link-menu  doc-menu">
                       <a href="https://t.me/vangoldtoken1">Telegram</a>
                       <a href="https://twitter.com/vangoldfinance">Twitter</a>
-                      <a href="https://www.reddit.com/user/vangoldtoken">Reddit</a>
+                      <a href="https://www.reddit.com/user/vangoldtoken">
+                        Reddit
+                      </a>
                       <a href="https://discord.gg/s3vVfBEFrc">Discord</a>
-                      <a href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw">Youtube</a>
+                      <a href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw">
+                        Youtube
+                      </a>
                     </div>
                   ) : (
                     ""
@@ -120,14 +126,19 @@ export default class About extends React.Component {
                 </div>
                 <div className="link-wrap">
                   <span onClick={this.individuals} className="a1">
-                  Markets
+                    Markets
                   </span>
                   {this.state.individuals ? (
                     <div className="link-menu markets">
-                      <a href="https://vangoldswap.finance/" className="stake-p">
+                      <a
+                        href="https://vangoldswap.finance/"
+                        className="stake-p"
+                      >
                         Stake & Farm
                       </a>
-                      <a href="https://pancakeswap.finance/swap?outputCurrency=0x487ecd4cFa635D1a9409E86Cd22d33d5abEb7b44">Buy VGD</a>
+                      <a href="https://pancakeswap.finance/swap?outputCurrency=0x487ecd4cFa635D1a9409E86Cd22d33d5abEb7b44">
+                        Buy VGD
+                      </a>
                       {/* <Link to="/terms">Terms</Link>
                       <Link to="/cookie-policy">Cookie Policy</Link>
                       <Link to="/landing-page">Landing Page</Link>
@@ -140,7 +151,9 @@ export default class About extends React.Component {
                 <a className="a1" href="mailto:vangoldtoken@vangold.finance">
                   Contact
                 </a>
-                <a href="https://t.me/vangoldtoken1" className="join-btn">Join the Network</a>
+                <a href="https://t.me/vangoldtoken1" className="join-btn">
+                  Join the Network
+                </a>
               </div>
             </div>
           </div>
@@ -279,7 +292,7 @@ export default class About extends React.Component {
                 <h6>Company</h6>
                 <Link to="/about">About us</Link>
                 <a href="https://vangoldfinance.medium.com/">Blog</a>
-                <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
+                <Link to="/contact-us">Contact us</Link>
                 <Link to="/">Pricing</Link>
                 <Link to="/">Testimonials</Link>
               </div>
@@ -292,7 +305,7 @@ export default class About extends React.Component {
               </div>
               <div className="col4">
                 <h6>Stay up to date</h6>
-                <label for="email" className="e-input">
+                <label htmlFor="email" className="e-input">
                   <input
                     id="email"
                     type="text"
@@ -313,7 +326,9 @@ export default class About extends React.Component {
                 <span>Vangold</span>
               </Link>
               <div className="r-div">
-                <a href="https://t.me/vangoldtoken1" className="join-btn">Join the Network</a>
+                <a href="https://t.me/vangoldtoken1" className="join-btn">
+                  Join the Network
+                </a>
                 <img alt="asdfd" onClick={this.handleMenu} src={menuIcon} />
               </div>
             </div>
@@ -338,9 +353,13 @@ export default class About extends React.Component {
                   <div className="menu-items">
                     <a href="https://t.me/vangoldtoken1">Telegram</a>
                     <a href="https://twitter.com/vangoldfinance">Twitter</a>
-                    <a href="https://www.reddit.com/user/vangoldtoken">Reddit</a>
+                    <a href="https://www.reddit.com/user/vangoldtoken">
+                      Reddit
+                    </a>
                     <a href="https://discord.gg/s3vVfBEFrc">Discord</a>
-                    <a href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw">Youtube</a>
+                    <a href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw">
+                      Youtube
+                    </a>
                   </div>
                 ) : (
                   ""
@@ -356,7 +375,9 @@ export default class About extends React.Component {
                 </div>
                 {this.state.subMenu2 === true ? (
                   <div className="menu-items doc-menu">
-                    <a href="https://drive.google.com/file/d/1RnIm59CoclsjOOtYGOBii8aZ_2TL3w_x/view?usp=drivesdk">Whitepaper</a>
+                    <a href="https://drive.google.com/file/d/1RnIm59CoclsjOOtYGOBii8aZ_2TL3w_x/view?usp=drivesdk">
+                      Whitepaper
+                    </a>
                     <Link to="/roadmap">Roadmap</Link>
                   </div>
                 ) : (
@@ -373,7 +394,9 @@ export default class About extends React.Component {
                 {this.state.subMenu3 === true ? (
                   <div className="menu-items">
                     <a href="https://vangoldswap.finance/">Stake & Farm</a>
-                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x487ecd4cFa635D1a9409E86Cd22d33d5abEb7b44">Buy VGD</a>
+                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x487ecd4cFa635D1a9409E86Cd22d33d5abEb7b44">
+                      Buy VGD
+                    </a>
                     {/* <Link to="/terms">Terms</Link>
                       <Link to="/cookie-policy">Cookie Policy</Link>
                       <Link to="/landing-page">Landing Page</Link>
@@ -423,66 +446,72 @@ export default class About extends React.Component {
               </div>
 
               <div className="footer">
-            <div className="container">
-              <div className="col1">
-                <Link to="/" className="brand-wrap">
-                  <img alt="asdfd" className="brand-img" src={logo} />
-                  <span>Vangold</span>
-                </Link>
-                <p className="p1">Copyright © 2021 Vangold Finance.</p>
-                <p className="p2">All rights reserved</p>
-                <div className="socials">
-                  <a
-                    href="https://instagram.com/vangoldfinance?r=nametag"
-                    className="circle"
-                  >
-                    <img alt="asdfd" src={insta} />
-                  </a>
-                  <a href="https://vangold.finance/" className="circle">
-                    <img alt="asdfd" src={basket} />
-                  </a>
-                  <a
-                    href="https://twitter.com/vangoldfinance"
-                    className="circle"
-                  >
-                    <img alt="asdfd" src={twitter} />
-                  </a>
-                  <a
-                    href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
-                    className="circle"
-                  >
-                    <img alt="asdfd" src={youtube} />
-                  </a>
+                <div className="container">
+                  <div className="col1">
+                    <Link to="/" className="brand-wrap">
+                      <img alt="asdfd" className="brand-img" src={logo} />
+                      <span>Vangold</span>
+                    </Link>
+                    <p className="p1">Copyright © 2021 Vangold Finance.</p>
+                    <p className="p2">All rights reserved</p>
+                    <div className="socials">
+                      <a
+                        href="https://instagram.com/vangoldfinance?r=nametag"
+                        className="circle"
+                      >
+                        <img alt="asdfd" src={insta} />
+                      </a>
+                      <a href="https://vangold.finance/" className="circle">
+                        <img alt="asdfd" src={basket} />
+                      </a>
+                      <a
+                        href="https://twitter.com/vangoldfinance"
+                        className="circle"
+                      >
+                        <img alt="asdfd" src={twitter} />
+                      </a>
+                      <a
+                        href="https://www.youtube.com/channel/UCpRE6nyI3DVxIYz6uDBJwkw"
+                        className="circle"
+                      >
+                        <img alt="asdfd" src={youtube} />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="col2">
+                    <h6>Company</h6>
+                    <div className="links">
+                      <Link to="/about">About us</Link>
+                      <a href="https://vangoldfinance.medium.com/">Blog</a>
+                      <Link to="/contact-us">Contact us</Link>
+                      <Link to="/">Pricing</Link>
+                      <Link to="/">Testimonials</Link>
+                    </div>
+                  </div>
+                  <div className="col3">
+                    <h6>Support</h6>
+                    <div className="links">
+                      <a href="Mailto:vangoldtoken@vangold.finance">
+                        Help center
+                      </a>
+                      <Link to="/terms">Terms of service</Link>
+                      <Link to="/cookie-policy">Cookie Policy</Link>
+                      <Link to="/privacy-policy">Privacy policy</Link>
+                    </div>
+                  </div>
+                  <div className="col4">
+                    <h6>Stay up to date</h6>
+                    <label htmlFor="email" className="e-input">
+                      <input
+                        id="email"
+                        type="text"
+                        placeholder="Your email address"
+                      />
+                      <img alt="asdfd" src={send} />
+                    </label>
+                  </div>
                 </div>
               </div>
-              <div className="col2">
-                <h6>Company</h6>
-                <Link to="/about">About us</Link>
-                <a href="https://vangoldfinance.medium.com/">Blog</a>
-                <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
-                <Link to="/">Pricing</Link>
-                <Link to="/">Testimonials</Link>
-              </div>
-              <div className="col3">
-                <h6>Support</h6>
-                <a href="Mailto:vangoldtoken@vangold.finance">Help center</a>
-                <Link to="/terms">Terms of service</Link>
-                <Link to="/cookie-policy">Cookie Policy</Link>
-                <Link to="/privacy-policy">Privacy policy</Link>
-              </div>
-              <div className="col4">
-                <h6>Stay up to date</h6>
-                <label for="email" className="e-input">
-                  <input
-                    id="email"
-                    type="text"
-                    placeholder="Your email address"
-                  />
-                  <img alt="asdfd" src={send} />
-                </label>
-              </div>
-            </div>
-          </div>
             </div>
           )}
         </div>

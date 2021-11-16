@@ -547,7 +547,7 @@ export default class Terms extends React.Component {
                 <h6>Company</h6>
                 <Link to="/about">About us</Link>
                 <a href="https://vangoldfinance.medium.com/">Blog</a>
-                <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
+                <Link to="/contact-us">Contact us</Link>
                 <Link to="/">Pricing</Link>
                 <Link to="/">Testimonials</Link>
               </div>
@@ -560,7 +560,7 @@ export default class Terms extends React.Component {
               </div>
               <div className="col4">
                 <h6>Stay up to date</h6>
-                <label for="email" className="e-input">
+                <label htmlFor="email" className="e-input">
                   <input
                     id="email"
                     type="text"
@@ -1092,24 +1092,28 @@ export default class Terms extends React.Component {
                   </div>
                   <div className="col2">
                     <h6>Company</h6>
-                    <Link to="/about">About us</Link>
-                    <a href="https://vangoldfinance.medium.com/">Blog</a>
-                    <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
-                    <Link to="/">Pricing</Link>
-                    <Link to="/">Testimonials</Link>
+                    <div className="links">
+                      <Link to="/about">About us</Link>
+                      <a href="https://vangoldfinance.medium.com/">Blog</a>
+                      <Link to="/contact-us">Contact us</Link>
+                      <Link to="/">Pricing</Link>
+                      <Link to="/">Testimonials</Link>
+                    </div>
                   </div>
                   <div className="col3">
                     <h6>Support</h6>
-                    <a href="Mailto:vangoldtoken@vangold.finance">
-                      Help center
-                    </a>
-                    <Link to="/terms">Terms of service</Link>
-                    <Link to="/cookie-policy">Cookie Policy</Link>
-                    <Link to="/privacy-policy">Privacy policy</Link>
+                    <div className="links">
+                      <a href="Mailto:vangoldtoken@vangold.finance">
+                        Help center
+                      </a>
+                      <Link to="/terms">Terms of service</Link>
+                      <Link to="/cookie-policy">Cookie Policy</Link>
+                      <Link to="/privacy-policy">Privacy policy</Link>
+                    </div>
                   </div>
                   <div className="col4">
                     <h6>Stay up to date</h6>
-                    <label for="email" className="e-input">
+                    <label htmlFor="email" className="e-input">
                       <input
                         id="email"
                         type="text"

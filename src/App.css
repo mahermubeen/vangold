@@ -115,12 +115,7 @@ a {
 }
 
 .flickity-viewport {
-  margin: 0 84px !important;
-}
-
-.flickity-slider {
-  left: -76px !important;
-  width: 114% !important;
+  margin: 0 84px;
 }
 
 canvas {
@@ -229,15 +224,6 @@ canvas {
     box-shadow: 0px 4px 24px -1px rgba(21, 24, 32, 0.2) !important;
     backdrop-filter: blur(40px) !important;
   }
-
-  .flickity-viewport {
-    margin: 0 55px !important;
-  }
-
-  .flickity-slider {
-    left: -55px !important;
-    width: 120% !important;
-  }
 }
 @media (max-width: 550px) {
   /* smaller, dark, rounded square */
@@ -281,15 +267,6 @@ canvas {
     background: linear-gradient(139.38deg, rgba(65, 70, 83, 0.4) 13.51%, rgba(56, 61, 74, 0.1) 86.74%) !important;
     box-shadow: 0px 4px 24px -1px rgba(21, 24, 32, 0.2) !important;
     backdrop-filter: blur(40px) !important;
-  }
-
-  .flickity-viewport {
-    margin: 0 15px !important;
-  }
-
-  .flickity-slider {
-    left: -18px !important;
-    width: 135% !important;
   }
 }
 .toggler {
@@ -1430,14 +1407,13 @@ canvas {
   margin-bottom: 50px;
   text-align: center;
 }
-.home .main-content .container .sec6 .carousall-wrap .carousel {
+.home .main-content .container .sec6 .carousall-wrap .test {
   outline: none;
 }
-.home .main-content .container .sec6 .carousall-wrap .carousel .flickity-slider .carousel-cell {
-  width: 100%;
-  max-width: 328px;
-  height: 186px;
-  margin-left: 30px;
+.home .main-content .container .sec6 .carousall-wrap .test .flickity-slider {
+  left: 4px;
+}
+.home .main-content .container .sec6 .carousall-wrap .test .flickity-slider .carousel-cell img {
   border-radius: 12px;
   overflow: hidden;
 }
@@ -1553,15 +1529,6 @@ canvas {
 .home .footer .container .col1 .socials .circle img {
   position: absolute;
   cursor: pointer;
-}
-.home .footer .container .col2 {
-  display: grid;
-}
-.home .footer .container .col2 h6 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 24px;
 }
 .home .footer .container .col2 {
   display: grid;
@@ -1965,14 +1932,16 @@ canvas {
   margin-bottom: 24px;
   text-align: center;
 }
-.home-mobile .main-content .container .sec6 .carousall-wrap .carousel {
+.home-mobile .main-content .container .sec6 .carousall-wrap .test {
   outline: none;
 }
-.home-mobile .main-content .container .sec6 .carousall-wrap .carousel .flickity-slider .carousel-cell {
-  width: 100%;
-  max-width: 250px;
-  height: 141px;
-  margin-left: 15px;
+.home-mobile .main-content .container .sec6 .carousall-wrap .test .flickity-slider {
+  left: 4px;
+}
+.home-mobile .main-content .container .sec6 .carousall-wrap .test .flickity-slider .carousel-cell {
+  height: 141px !important;
+}
+.home-mobile .main-content .container .sec6 .carousall-wrap .test .flickity-slider .carousel-cell img {
   border-radius: 12px;
   overflow: hidden;
 }
@@ -2214,6 +2183,11 @@ canvas {
     gap: 0px !important;
   }
 }
+@media (max-width: 1030px) {
+  .carousel-cell {
+    width: 52% !important;
+  }
+}
 @media (max-width: 895px) {
   .home-mobile {
     display: block;
@@ -2223,17 +2197,34 @@ canvas {
     display: none;
   }
 }
-@media (max-width: 550px) {
-  .home-mobile .carousall-wrap .carousel {
-    outline: none;
+@media (max-width: 780px) {
+  .flickity-viewport {
+    height: 186px !important;
+    margin: 0 64px !important;
   }
-  .home-mobile .carousall-wrap .carousel .flickity-slider .carousel-cell {
-    width: 100% !important;
-    max-width: 230px !important;
-    height: 130px !important;
-    margin-left: 15px;
-    border-radius: 12px;
-    overflow: hidden;
+
+  .carousel-cell {
+    width: 71% !important;
+  }
+}
+@media (max-width: 450px) {
+  .flickity-viewport {
+    height: 141px !important;
+    margin: 0 24px !important;
+  }
+  .flickity-viewport .flickity-slider {
+    width: 103%;
+    left: -19px !important;
+  }
+
+  .carousel-cell {
+    width: 240px !important;
+    height: 141px !important;
+    margin: 0 20px;
+  }
+  .carousel-cell img {
+    width: 230px !important;
+    height: 141px !important;
   }
 }
 .about {
@@ -3619,12 +3610,7 @@ a {
 }
 
 .flickity-viewport {
-  margin: 0 84px !important;
-}
-
-.flickity-slider {
-  left: -76px !important;
-  width: 114% !important;
+  margin: 0 84px;
 }
 
 canvas {
@@ -3733,15 +3719,6 @@ canvas {
     box-shadow: 0px 4px 24px -1px rgba(21, 24, 32, 0.2) !important;
     backdrop-filter: blur(40px) !important;
   }
-
-  .flickity-viewport {
-    margin: 0 55px !important;
-  }
-
-  .flickity-slider {
-    left: -55px !important;
-    width: 120% !important;
-  }
 }
 @media (max-width: 550px) {
   /* smaller, dark, rounded square */
@@ -3785,15 +3762,6 @@ canvas {
     background: linear-gradient(139.38deg, rgba(65, 70, 83, 0.4) 13.51%, rgba(56, 61, 74, 0.1) 86.74%) !important;
     box-shadow: 0px 4px 24px -1px rgba(21, 24, 32, 0.2) !important;
     backdrop-filter: blur(40px) !important;
-  }
-
-  .flickity-viewport {
-    margin: 0 15px !important;
-  }
-
-  .flickity-slider {
-    left: -18px !important;
-    width: 135% !important;
   }
 }
 .toggler {
@@ -4251,7 +4219,7 @@ canvas {
   margin-bottom: 12px;
   text-align: center;
 }
-.landing-mobile .main-content .container .sec5 .boxes .box .box-items button {
+.landing-mobile .main-content .container .sec5 .boxes .box .box-items a {
   margin: 0 auto;
   background: #ffc526;
   border-radius: 8px;
@@ -6044,7 +6012,7 @@ canvas {
 }
 .roadmap-mobile .main-content .sec1 .row2 .left-icon-wrap .menu7-wrap .p-wrap {
   background: url("./img/menu7.png") no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   background-position: center;
   padding: 19px;
   padding-left: 70px;
@@ -6222,7 +6190,7 @@ canvas {
 }
 .roadmap-mobile .main-content .sec1 .img-icon4-wrap .menu4-wrap .p-wrap {
   background: url("./img/menu4.png") no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   background-position: center;
   padding: 19px;
   padding-left: 70px;
@@ -6273,13 +6241,13 @@ canvas {
   gap: 16px;
   width: 280px;
   position: absolute;
-  left: -23%;
-  top: -224%;
+  left: -6%;
+  top: -130%;
   z-index: 5;
 }
 .roadmap-mobile .main-content .sec1 .img-icon5-wrap .menu5-wrap .p-wrap {
   background: url("./img/menu5.png") no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   background-position: center;
   padding: 19px;
   padding-left: 70px;
@@ -6327,7 +6295,7 @@ canvas {
 }
 .roadmap-mobile .main-content .sec1 .last-img .menu6-wrap .p-wrap {
   background: url("./img/menu6.png") no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   background-position: center;
   padding: 19px;
   padding-left: 70px;

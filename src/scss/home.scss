@@ -491,16 +491,15 @@
                 }
 
                 .carousall-wrap {
-                    .carousel {
+                    .test {
                         outline: none;
                         .flickity-slider {
+                            left: 4px;
                             .carousel-cell {
-                                width: 100%;
-                                max-width: 328px;
-                                height: 186px;
-                                margin-left: 30px;
-                                border-radius: 12px;
-                                overflow: hidden;
+                                img {
+                                    border-radius: 12px;
+                                    overflow: hidden;
+                                }
                             }
                         }
                     }
@@ -624,16 +623,6 @@
                     }
                 }
             }
-            .col2 {
-                display: grid;
-                h6 {
-                    font-weight: 500;
-                    font-size: 20px;
-                    line-height: 30px;
-                    margin-bottom: 24px;
-                }
-            }
-
             .col2 {
                 display: grid;
                 h6 {
@@ -1082,16 +1071,16 @@
                 }
 
                 .carousall-wrap {
-                    .carousel {
+                    .test {
                         outline: none;
                         .flickity-slider {
+                            left: 4px;
                             .carousel-cell {
-                                width: 100%;
-                                max-width: 250px;
-                                height: 141px;
-                                margin-left: 15px;
-                                border-radius: 12px;
-                                overflow: hidden;
+                                height: 141px !important;
+                                img {
+                                    border-radius: 12px;
+                                    overflow: hidden;
+                                }
                             }
                         }
                     }
@@ -1356,6 +1345,12 @@
     }
 }
 
+@media (max-width: 1030px) {
+    .carousel-cell {
+        width: 52% !important;
+    }
+}
+
 @media (max-width: 895px) {
     .home-mobile {
         display: block;
@@ -1365,22 +1360,32 @@
     }
 }
 
-@media (max-width: 550px) {
-    .home-mobile {
-        .carousall-wrap {
-            .carousel {
-                outline: none;
-                .flickity-slider {
-                    .carousel-cell {
-                        width: 100% !important;
-                        max-width: 230px !important;
-                        height: 130px !important;
-                        margin-left: 15px;
-                        border-radius: 12px;
-                        overflow: hidden;
-                    }
-                }
-            }
+@media (max-width: 780px) {
+    .flickity-viewport {
+        height: 186px !important;
+        margin: 0 64px !important;
+    }
+    .carousel-cell {
+        width: 71% !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .flickity-viewport {
+        height: 141px !important;
+        margin: 0 24px !important;
+        .flickity-slider {
+            width: 103%;
+            left: -19px !important;
+        }
+    }
+    .carousel-cell {
+        width: 240px !important;
+        height: 141px !important;
+        margin: 0 20px;
+        img {
+            width: 230px !important;
+            height: 141px !important;
         }
     }
 }

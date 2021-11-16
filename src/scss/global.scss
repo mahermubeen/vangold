@@ -113,12 +113,7 @@ a {
 }
 
 .flickity-viewport {
-  margin: 0 84px !important;
-}
-
-.flickity-slider {
-  left: -76px !important;
-  width: 114% !important;
+  margin: 0 84px ;
 }
 
 //particles css
@@ -181,6 +176,7 @@ canvas {
   }
 }
 
+
 @media (max-width: 770px) {
   /* smaller, dark, rounded square */
   .flickity-prev-next-button {
@@ -221,15 +217,6 @@ canvas {
     background: linear-gradient(139.38deg, rgba(65, 70, 83, 0.4) 13.51%, rgba(56, 61, 74, 0.1) 86.74%) !important;
     box-shadow: 0px 4px 24px -1px rgba(21, 24, 32, 0.2) !important;
     backdrop-filter: blur(40px) !important;
-  }
-
-  .flickity-viewport {
-    margin: 0 55px !important;
-  }
-
-  .flickity-slider {
-    left: -55px !important;
-    width: 120% !important;
   }
 }
 
@@ -275,14 +262,6 @@ canvas {
     backdrop-filter: blur(40px) !important;
   }
 
-  .flickity-viewport {
-    margin: 0 15px !important;
-  }
-
-  .flickity-slider {
-    left: -18px !important;
-    width: 135% !important;
-  }
 }
 
 //toggler

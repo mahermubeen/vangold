@@ -71,27 +71,69 @@ export default class Roadmap extends React.Component {
 
   menu1() {
     this.setState({ menu1: !this.state.menu1 });
+    this.setState({ menu2: false });
+    this.setState({ menu3: false });
+    this.setState({ menu4: false });
+    this.setState({ menu5: false });
+    this.setState({ menu6: false });
+    this.setState({ menu7: false });
   }
 
   menu2() {
     this.setState({ menu2: !this.state.menu2 });
+    this.setState({ menu1: false });
+    this.setState({ menu3: false });
+    this.setState({ menu4: false });
+    this.setState({ menu5: false });
+    this.setState({ menu6: false });
+    this.setState({ menu7: false });
   }
 
   menu3() {
     this.setState({ menu3: !this.state.menu3 });
+    this.setState({ menu1: false });
+    this.setState({ menu2: false });
+    this.setState({ menu4: false });
+    this.setState({ menu5: false });
+    this.setState({ menu6: false });
+    this.setState({ menu7: false });
   }
 
   menu4() {
     this.setState({ menu4: !this.state.menu4 });
+    this.setState({ menu1: false });
+    this.setState({ menu2: false });
+    this.setState({ menu3: false });
+    this.setState({ menu5: false });
+    this.setState({ menu6: false });
+    this.setState({ menu7: false });
   }
   menu5() {
     this.setState({ menu5: !this.state.menu5 });
+    this.setState({ menu1: false });
+    this.setState({ menu2: false });
+    this.setState({ menu3: false });
+    this.setState({ menu4: false });
+    this.setState({ menu6: false });
+    this.setState({ menu7: false });
   }
   menu6() {
     this.setState({ menu6: !this.state.menu6 });
+    this.setState({ menu1: false });
+    this.setState({ menu2: false });
+    this.setState({ menu3: false });
+    this.setState({ menu4: false });
+    this.setState({ menu5: false });
+    this.setState({ menu7: false });
   }
   menu7() {
     this.setState({ menu7: !this.state.menu7 });
+    this.setState({ menu1: false });
+    this.setState({ menu2: false });
+    this.setState({ menu3: false });
+    this.setState({ menu4: false });
+    this.setState({ menu5: false });
+    this.setState({ menu6: false });
   }
 
   community() {
@@ -638,7 +680,7 @@ export default class Roadmap extends React.Component {
                 <h6>Company</h6>
                 <Link to="/about">About us</Link>
                 <a href="https://vangoldfinance.medium.com/">Blog</a>
-                <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
+                <Link to="/contact-us">Contact us</Link>
                 <Link to="/">Pricing</Link>
                 <Link to="/">Testimonials</Link>
               </div>
@@ -651,7 +693,7 @@ export default class Roadmap extends React.Component {
               </div>
               <div className="col4">
                 <h6>Stay up to date</h6>
-                <label for="email" className="e-input">
+                <label htmlFor="email" className="e-input">
                   <input
                     id="email"
                     type="text"
@@ -1208,24 +1250,28 @@ export default class Roadmap extends React.Component {
                   </div>
                   <div className="col2">
                     <h6>Company</h6>
-                    <Link to="/about">About us</Link>
-                    <a href="https://vangoldfinance.medium.com/">Blog</a>
-                    <a href="Mailto:vangoldtoken@vangold.finance">Contact us</a>
-                    <Link to="/">Pricing</Link>
-                    <Link to="/">Testimonials</Link>
+                    <div className="links">
+                      <Link to="/about">About us</Link>
+                      <a href="https://vangoldfinance.medium.com/">Blog</a>
+                      <Link to="/contact-us">Contact us</Link>
+                      <Link to="/">Pricing</Link>
+                      <Link to="/">Testimonials</Link>
+                    </div>
                   </div>
                   <div className="col3">
                     <h6>Support</h6>
-                    <a href="Mailto:vangoldtoken@vangold.finance">
-                      Help center
-                    </a>
-                    <Link to="/terms">Terms of service</Link>
-                    <Link to="/cookie-policy">Cookie Policy</Link>
-                    <Link to="/privacy-policy">Privacy policy</Link>
+                    <div className="links">
+                      <a href="Mailto:vangoldtoken@vangold.finance">
+                        Help center
+                      </a>
+                      <Link to="/terms">Terms of service</Link>
+                      <Link to="/cookie-policy">Cookie Policy</Link>
+                      <Link to="/privacy-policy">Privacy policy</Link>
+                    </div>
                   </div>
                   <div className="col4">
                     <h6>Stay up to date</h6>
-                    <label for="email" className="e-input">
+                    <label htmlFor="email" className="e-input">
                       <input
                         id="email"
                         type="text"
